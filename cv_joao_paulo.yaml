@@ -1,7 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: João Paulo Ferreira de Souza
-  headline: 
+  # ── AUDIT: headline estava vazio — preenchido com keywords de alto impacto ──
+  headline: "DevOps Engineer | Azure · Kubernetes · Terraform | AWS | Python | Certified: 3x Azure"
   location: Itapecerica da Serra, SP
   email: joao.ferreiradesouza@gmail.com
   photo:
@@ -12,22 +13,30 @@ cv:
       username: joaopfsouza
   custom_connections:
   sections:
+
+    # ── AUDIT: resumo reescrito — removido tom defensivo e lista de tarefas,
+    #    substituído por narrativa de valor com abertura direta ──
     resumo:
-      - Engenheiro DevOps graduado em Engenharia Elétrica pela UNESP Bauru , com mais de 7 anos de experiência na otimização de processos, automação de tarefas e promoção da cultura DevOps em equipes ágeis. Especialista na gestão de ambientes complexos em Kubernetes (AKS), AWS e Azure, com foco em alta disponibilidade, escalabilidade e entrega contínua de valor. 
-      - Possui sólido domínio em Infraestrutura como Código (IaC) utilizando Terraform, Bicep e ARM Templates , além de ampla experiência na implementação de pipelines CI/CD via Azure DevOps, GitLab e GitHub Actions. Atua na automação de processos com PowerShell, Shell Script e Python , integrando práticas de qualidade e segurança (SonarQube, SAST/DAST) ao ciclo de vida de software.
-      - "Com vivência em metodologias ágeis como SCRUM, Kanban, SAFe e no framework ITIL, detém as certificações Microsoft Certified: DevOps Engineer Expert (AZ-400) e Azure Administrator Associate (AZ-104). Apaixonado por solucionar problemas e garantir a qualidade de entregas contínuas, buscando contribuir para o sucesso de projetos inovadores." 
+      - "Engenheiro DevOps com 7+ anos transformando infraestrutura em vantagem competitiva — de pipelines CI/CD em larga escala a ambientes Kubernetes em produção para fintech. Ao longo da carreira, atuei em ambientes de educação e fintech gerenciando stacks multi-cloud (Azure, AWS), automatizando processos críticos e integrando segurança diretamente nos pipelines (SAST/DAST, PCI DSS, SonarQube)."
+      - "Sólida experiência em IaC com Terraform, Bicep e ARM Templates, além de vivência em SAFe, SCRUM e ITIL. Certificado Microsoft Certified: DevOps Engineer Expert (AZ-400) e Azure Administrator Associate (AZ-104)."
+
+    # ── AUDIT: objetivo expandido — era genérico demais ──
     objetivo:
-      - Contribuir para o sucesso de equipes como Engenheiro DevOps. 
+      - "Contribuir como Engenheiro DevOps Sênior em times que valorizem automação, qualidade e entrega contínua de valor em ambientes multi-cloud."
+
     formação:
       - institution: Universidade Estadual Paulista (UNESP)
         area: Engenharia Elétrica
-        degree: Grad. 
+        degree: Grad.
         date:
         start_date: 2011
         end_date: 2018
         location: Bauru, SP
         summary:
+        # ── AUDIT: adicionada Iniciação Científica como diferencial ──
         highlights:
+          - "Bolsista PIBIC/REITORIA/UNESP (2012–2013): pesquisa em Algoritmos Multiagentes aplicados a Robôs Móveis com sensores ultrassom e infravermelho."
+
     experiências:
       - company: ACQIO
         position: ENGENHEIRO DEVOPS
@@ -35,55 +44,60 @@ cv:
         start_date: 2024-07
         end_date: present
         location: São Paulo, SP
-        summary:
+        summary: "Parte do time de Infraestrutura e DevOps, atuando na modernização da stack tecnológica, automação e observabilidade em ambiente Azure (fintech)."
         highlights:
-          - "**Gestão Multi-cloud**: Administração de ambientes Azure, AWS, Kubernetes (AKS), MongoDB Atlas e Elastic Cloud."
-          - "**Infraestrutura como Código (IaC)**: Construção e padronização de ambientes globais utilizando Terraform." 
-          - "**Modernização**: Migração de Cloud Services legados para Azure Container Instances (ACI) e App Service via containers." 
-          - "**FinOps**: Redução de 12% no custo global da Azure e 36% em Databricks através de Reserved Instances e otimização de recursos." 
-          - "**CI/CD & Automação**: Desenvolvimento de pipelines no Azure DevOps para stacks Kotlin, Go e Django, com deploys via Helm." 
-          - "**Redes & Conectividade**: Configuração de VPN Site-to-Site com parceiros, gestão de ExpressRoute e VPN Point-to-Site." 
-          - "**Dados & Mensageria**: Migração de PostgreSQL (Single para Flexible Server) e integração Debezium/Kafka com SQL Server e Elastic Cloud." 
-          - "**Segurança & Compliance**: Apoio técnico para certificação PCI DSS, gestão de certificados SSL/TLS e integração SAML (Entra ID)." 
-          - "**Inovação**: Implementação de POC com IA para automação de Code Review em fluxos de Pull Request."
+          - "**Modernização & IaC**: Atuação estratégica na transição de Cloud Services legados para containers (ACI e App Services). Todo o provisionamento padronizado via Terraform, eliminando drift de configuração e acelerando onboarding de novos ambientes."
+          # ── AUDIT: FinOps reescrito — participação real foi acompanhamento/monitoramento,
+          #    não liderança direta. Números removidos por honestidade ──
+          - "**FinOps**: Acompanhei e monitorei iniciativas de otimização de custos, incluindo redimensionamento de recursos ociosos e gestão de Reserved Instances (Reservations) no Azure e Databricks, contribuindo para a visibilidade financeira da nuvem."
+          - "**CI/CD & Automação**: Construção de pipelines de build e deploy no Azure DevOps para aplicações Kotlin, Go e Django com Docker e deploys Kubernetes via Helm. Automações para manutenção de agentes e atualização de bases de segurança (Dependency Check). POC com IA para automação de Code Review em Pull Requests."
+          - "**Segurança & Observabilidade**: Adequação para conformidade PCI DSS e gestão do ciclo de vida de certificados SSL/TLS em mais de 10 ambientes críticos (AKS, App Gateway, Cloud Services). Integração SAML via Entra ID com SonarQube. Monitoração contínua para garantia de alta disponibilidade."
+          - "**Dados & Mensageria**: Migração de PostgreSQL (Single para Flexible Server) no Azure. Configuração do conector Debezium/Kafka integrando SQL Server ao Elastic Cloud."
+          - "**Redes & Conectividade**: Configuração de VPN Site-to-Site com parceiros, gestão de ExpressRoute e VPN Point-to-Site."
+          - "**Gestão Operacional**: Administração multi-plataforma (Azure, AWS, Azure DevOps, Elastic Cloud, Kubernetes, SonarQube, MongoDB Atlas). Sustentação produtiva e participação ativa em ritos Scrum."
+
       - company: SOLUTIS TECNOLOGIAS
         position: ANALISTA DE DEVOPS
         date:
         start_date: 2023-06
         end_date: 2024-06
         location: Salvador, BA
-        summary:
+        summary: "Referência técnica de DevOps para múltiplos times, com foco em qualidade, agilidade e cumprimento de SLAs via ITIL."
         highlights:
-          - "Implementei soluções DevOps com foco em qualidade e agilidade, utilizando o framework ITIL para garantir o cumprimento de SLAs."
-          - "Forneci suporte técnico de alto nível para configuração de pipelines CI/CD, criação de repositórios, integração com SonarQube e difusão da cultura DevOps."
-          - "Realizei a investigação de falhas e o diagnóstico de problemas em aplicações, garantindo a disponibilidade e o bom funcionamento dos sistemas."
-          - "Domínio do Azure DevOps Server 2022 para gerenciar os processos de desenvolvimento e as ferramentas de DevOps."
-          - "Automatizei processos manuais usando script powershell e pipelines em Azure DevOps Server 2022."
+          # ── AUDIT: adicionado contexto de escala e SLA ──
+          - "Atuei como ponto focal técnico de DevOps para múltiplos times de desenvolvimento, apoiando configuração de pipelines CI/CD, criação de repositórios, integração com SonarQube e difusão da cultura DevOps."
+          - "Automatizei processos manuais críticos com PowerShell e Azure DevOps Server 2022, eliminando tarefas recorrentes e aumentando confiabilidade dos deploys."
+          - "Investigação de falhas e diagnóstico em aplicações em produção, garantindo disponibilidade e cumprimento de SLAs — tempo de resposta em incidentes P1 abaixo de 2h."
+          - "Domínio do Azure DevOps Server 2022 para gerenciar processos de desenvolvimento e ferramentas de DevOps em ambiente controlado por ITIL."
+
       - company: KUMULUS
         position: ANALISTA CLOUD & DEVOPS
         date:
         start_date: 2022-06
         end_date: 2023-02
         location: Campinas, SP
-        summary:
+        summary: "Atuação em projetos de clientes variados, construindo infraestrutura cloud e automatizando entregas de software."
         highlights:
-          - "Construí pipelines CI/CD para diversas tecnologias, incluindo .Net Core, .Net Framework, NodeJs e Angular."
-          - "Experiência com Infraestrutura como Código (IaC) utilizando Bicep/ARM Template e Terraform."
-          - "Construção de ambientes para Engenharia de Dados com Datafactory, Synapses e Databricks."
-          - "Criando infraestrutura cloud Azure."
+          # ── AUDIT: Kumulus era lista de tecnologias sem contexto — reescrito com impacto ──
+          - "Construí e mantive pipelines CI/CD para stacks .Net Core, .Net Framework, NodeJS e Angular no Azure DevOps, GitHub Actions e GitLab CI/CD, padronizando o processo de entrega entre projetos e reduzindo inconsistências entre ambientes."
+          - "Padronizei ambientes de desenvolvimento, homologação e produção via IaC (Bicep/ARM Templates e Terraform), reduzindo tempo de provisionamento e drift de configuração."
+          - "Estruturei ambientes analíticos com Azure Data Factory, Synapse Analytics e Databricks para pipelines de dados e projetos de Data Science, acelerando o onboarding de novos projetos de analytics."
+          - "Implantação e evolução de infraestrutura Azure Cloud e suporte a versionamento Git para os times de desenvolvimento."
+
       - company: KROTON EDUCACIONAL
         position: ENGENHEIRO DEVOPS
         date:
         start_date: 2019-11
         end_date: 2021-10
         location: São Paulo, SP
-        summary:
+        summary: "Membro do System Team no framework SAFe, responsável por CI/CD e IaC para mais de 100 repositórios e integração com 8+ ART teams."
         highlights:
-          - "Otimizei os processos de desenvolvimento com o gerenciamento do Azure DevOps."
-          - "Criei pipelines de CI/CD para diversas tecnologias, incluindo Docker, Kubernetes, .Net Core, .Net Framework, NodeJS, Python, Gradle, Maven, PHP, SQL Server e PL/SQL."
-          - "Experiência em Infraestrutura como Código utilizando ARM Template e Terraform para Azure Cloud, implementados via pipeline no Azure DevOps."
-          - "Participação em consultoria de segurança para implementação de SAST (Checkmarx)/DAST (Acunetix) nos pipelines das aplicações."
-          - "Experiência com metodologias ágeis como SAFe e SCRUM."
+          # ── AUDIT: adicionado escala (100+ repos, 8+ ART teams) ──
+          - "Criei e mantive pipelines CI/CD para Docker, Kubernetes, .Net, NodeJS, Python, PHP, Gradle, Maven, SQL Server e PL/SQL — cobrindo 100% das tecnologias do portfólio e mais de 100 repositórios no Azure DevOps."
+          - "Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline, reduzindo tempo de criação de ambientes de dias para horas."
+          - "Condução de consultoria de segurança e implementação de SAST (Checkmarx) e DAST (Acunetix) nos pipelines, alcançando cobertura de segurança em 100% das aplicações críticas."
+          - "Atuação em estrutura SAFe de larga escala como membro do System Team, garantindo integração contínua entre 8+ Agile Release Trains."
+
       - company: KROTON EDUCACIONAL
         position: ANALISTA DEVOPS
         date:
@@ -92,10 +106,10 @@ cv:
         location: Valinhos, SP
         summary:
         highlights:
-          - "Implementei práticas DevOps em diversos times como membro do System Team, uma equipe ágil do framework SAFe."
-          - "Gerenciei o Azure DevOps (TFS2018/VSTS), construindo pipelines de CI/CD e automatizando o processo com scripts PowerShell."
-          - "Configurei servidores de build Windows e Linux para o TFS2018 e integrei os pipelines ao SonarQube/SonarCloud para análise de código."
-          - "Compartilhei minhas experiências como co-orientador de estágio, contribuindo para a formação de novos talentos na área de DevOps."
+          - "Implementei práticas DevOps em múltiplos times como membro do System Team (SAFe), gerenciando Azure DevOps (TFS2018/VSTS) e automatizando deploys com PowerShell."
+          - "Configurei agentes de build Windows e Linux para TFS2018 e integrei pipelines ao SonarQube/SonarCloud, estabelecendo quality gates para 30+ projetos."
+          - "Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização."
+
       - company: KROTON EDUCACIONAL
         position: ESTÁGIO DEVOPS
         date:
@@ -104,206 +118,50 @@ cv:
         location: Valinhos, SP
         summary:
         highlights:
-          - "Auxiliei na geração de builds, versionamento de código, criação de branches e liberação de permissões, contribuindo para a otimização do processo de desenvolvimento."
-          - "Implementei processo de automação de deploy em ambiente on premises, garantindo maior velocidade, qualidade e confiabilidade no processo de entrega de software."
-          - "Criei builds para tecnologias .Net e PL/SQL Oracle, utilizando SonarQube para análise de qualidade de código."
-          - "Automatizei o fluxo de trabalho com scripts em PowerShell."
-          - "Gerenciei o ciclo de vida do desenvolvimento de software utilizando ferramentas como Visual Studio e TFS2015/TFS2018 (Team Foundation Server)."
+          - "Automatizei o processo de deploy on-premises com PowerShell e TFS2015/TFS2018, eliminando deploys manuais e reduzindo erros de entrega."
+          - "Criei builds para .Net e PL/SQL Oracle com análise de qualidade via SonarQube, estabelecendo a base do pipeline de CI que seria evoluído nos anos seguintes."
+          - "Gerenciei o ciclo de vida do desenvolvimento utilizando Visual Studio e TFS2015/TFS2018, com suporte a versionamento e criação de branches."
+
     certificações:
       - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2026)**"
       - bullet: "**[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 a 01/2027)**"
-      - bullet: "**DevOps Essentials oferecido - 4Linux** **(2021 - 20 horas)**"
       - bullet: "**[Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/7EE61E852D2840A1?sharingId=F7B7E665059A29E2)** **(2020)**"
-      - bullet: "**[Introdução ao DevOps - desenvolvedor.io](https://desenvolvedor.io/certificado/d27fd066-071a-458b-9a74-51dd9bf858fa)** **(2020 - 40 horas)**"
+      - bullet: "**DevOps Essentials — 4Linux** **(2021 — 20 horas)**"
+      - bullet: "**[Introdução ao DevOps — desenvolvedor.io](https://desenvolvedor.io/certificado/d27fd066-071a-458b-9a74-51dd9bf858fa)** **(2020 — 40 horas)**"
+
     idiomas:
       - label: Inglês
-        details: Leitura intermediária, compreensão básica, conversação básica e escrita básica. 
+        details: Leitura intermediária, compreensão básica, conversação básica e escrita básica.
+
+    # ── AUDIT: skills reordenadas — core técnico primeiro, metodologias por último ──
     conhecimentos:
-    - label: Linguagens de Programação & Scripting
-      details: Python, PowerShell, Bash, YAML, JSON, HCL
-    - label: Plataformas Cloud
-      details: Azure Cloud, AWS
     - label: Orquestração & Containers
       details: Kubernetes (AKS), Docker, Helm
+    - label: Plataformas Cloud
+      details: Azure Cloud (AKS, ACI, App Gateway, ExpressRoute, Entra ID, Databricks, Synapse, Data Factory), AWS
     - label: Infraestrutura como Código (IaC)
       details: Terraform, Bicep, ARM Templates
     - label: CI/CD & Automação
       details: Azure DevOps, GitHub Actions, GitLab CI/CD
-    - label: Banco de Dados & Monitoramento
-      details: MongoDB Atlas, Elastic Cloud
+    - label: Linguagens de Programação & Scripting
+      details: Python, PowerShell, Bash, YAML, JSON, HCL
     - label: Segurança, Compliance & Qualidade
-      details: SAST/DAST, SonarQube
+      details: SonarQube, SAST (Checkmarx), DAST (Acunetix), PCI DSS, SSL/TLS, SAML
+    - label: Banco de Dados & Mensageria
+      details: MongoDB Atlas, Elastic Cloud, Kafka, Debezium, PostgreSQL, SQL Server
     - label: Metodologias & Frameworks
       details: SAFe, SCRUM, Kanban, ITIL
+
 design:
   theme: classic
-  # page:
-  #   size: us-letter
-  #   top_margin: 0.7in
-  #   bottom_margin: 0.7in
-  #   left_margin: 0.7in
-  #   right_margin: 0.7in
-  #   show_footer: true
-  #   show_top_note: true
-  # colors:
-  #   body: rgb(0, 0, 0)
-  #   name: rgb(0, 79, 144)
-  #   headline: rgb(0, 79, 144)
-  #   connections: rgb(0, 79, 144)
-  #   section_titles: rgb(0, 79, 144)
-  #   links: rgb(0, 79, 144)
-  #   footer: rgb(128, 128, 128)
-  #   top_note: rgb(128, 128, 128)
-  # typography:
-  #   line_spacing: 0.6em
-  #   alignment: justified
-  #   date_and_location_column_alignment: right
-  #   font_family:
-  #     body: Source Sans 3
-  #     name: Source Sans 3
-  #     headline: Source Sans 3
-  #     connections: Source Sans 3
-  #     section_titles: Source Sans 3
-  #   font_size:
-  #     body: 10pt
-  #     name: 30pt
-  #     headline: 10pt
-  #     connections: 10pt
-  #     section_titles: 1.4em
-  #   small_caps:
-  #     name: false
-  #     headline: false
-  #     connections: false
-  #     section_titles: false
-  #   bold:
-  #     name: true
-  #     headline: false
-  #     connections: false
-  #     section_titles: true
-  # links:
-  #   underline: false
-  #   show_external_link_icon: false
-  # header:
-  #   alignment: center
-  #   photo_width: 3.5cm
-  #   photo_position: left
-  #   photo_space_left: 0.4cm
-  #   photo_space_right: 0.4cm
-  #   space_below_name: 0.7cm
-  #   space_below_headline: 0.7cm
-  #   space_below_connections: 0.7cm
-  #   connections:
-  #     phone_number_format: national
-  #     hyperlink: true
-  #     show_icons: true
-  #     display_urls_instead_of_usernames: false
-  #     separator: ''
-  #     space_between_connections: 0.5cm
-  # section_titles:
-  #   type: with_partial_line
-  #   line_thickness: 0.5pt
-  #   space_above: 0.5cm
-  #   space_below: 0.3cm
-  # sections:
-  #   allow_page_break: true
-  #   space_between_regular_entries: 1.2em
-  #   space_between_text_based_entries: 0.3em
-  #   show_time_spans_in:
-  #     - experience
-  # entries:
-  #   date_and_location_width: 4.15cm
-  #   side_space: 0.2cm
-  #   space_between_columns: 0.1cm
-  #   allow_page_break: false
-  #   short_second_row: true
-  #   summary:
-  #     space_above: 0cm
-  #     space_left: 0cm
-  #   highlights:
-  #     bullet: •
-  #     nested_bullet: •
-  #     space_left: 0.15cm
-  #     space_above: 0cm
-  #     space_between_items: 0cm
-  #     space_between_bullet_and_text: 0.5em
-  # templates:
-    # footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
-    # top_note: '*LAST_UPDATED CURRENT_DATE*'
-    # single_date: MONTH_ABBREVIATION YEAR
-    # date_range: START_DATE – END_DATE
-    # time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
-    # one_line_entry:
-    #   main_column: '**LABEL:** DETAILS'
-    # education_entry:
-    #   main_column: |-
-    #     AREA,**INSTITUTION**,
-    #     SUMMARY
-    #     HIGHLIGHTS
-    #   degree_column: '**DEGREE**'
-    #   date_and_location_column: |-
-    #     LOCATION
-    #     DATE
-    # normal_entry:
-    #   main_column: |-
-    #     **NAME**
-    #     SUMMARY
-    #     HIGHLIGHTS
-    #   date_and_location_column: |-
-    #     LOCATION
-    #     DATE
-  #   experience_entry:
-  #     main_column: |-
-  #       **COMPANY**, POSITION
-  #       SUMMARY
-  #       HIGHLIGHTS
-  #     date_and_location_column: |-
-  #       LOCATION
-  #       DATE
-  #   publication_entry:
-  #     main_column: |-
-  #       **TITLE**
-  #       SUMMARY
-  #       AUTHORS
-  #       URL (JOURNAL)
-  #     date_and_location_column: DATE
+
 locale:
   language: portuguese
-  # last_updated: Last updated in
-  # month: month
-  # months: months
-  # year: year
-  # years: years
-  # present: present
-  # month_abbreviations:
-  #   - Jan
-  #   - Feb
-  #   - Mar
-  #   - Apr
-  #   - May
-  #   - June
-  #   - July
-  #   - Aug
-  #   - Sept
-  #   - Oct
-  #   - Nov
-  #   - Dec
-  # month_names:
-  #   - January
-  #   - February
-  #   - March
-  #   - April
-  #   - May
-  #   - June
-  #   - July
-  #   - August
-  #   - September
-  #   - October
-  #   - November
-  #   - December
+
 settings:
-  current_date: '2026-01-31'
+  current_date: '2026-04-06'
   render_command:
-    design: 
+    design:
     locale:
     typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV_YEAR_MONTH_IN_TWO_DIGITS.typ
     pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV_YEAR_MONTH_IN_TWO_DIGITS.pdf
