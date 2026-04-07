@@ -90,13 +90,12 @@ cv:
         start_date: 2019-11
         end_date: 2021-10
         location: São Paulo, SP
-        summary: "Membro do System Team no framework SAFe, responsável por CI/CD e IaC para mais de 100 repositórios e integração com 8+ ART teams."
+        summary: "Promoção para Engenheiro dentro do mesmo time, assumindo responsabilidade técnica sobre CI/CD e IaC para múltiplos repositórios, atendendo entre 5 e 10 times no framework SAFe."
         highlights:
-          # ── AUDIT: adicionado escala (100+ repos, 8+ ART teams) ──
-          - "Criei e mantive pipelines CI/CD para Docker, Kubernetes, .Net, NodeJS, Python, PHP, Gradle, Maven, SQL Server e PL/SQL — cobrindo 100% das tecnologias do portfólio e mais de 100 repositórios no Azure DevOps."
-          - "Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline, reduzindo tempo de criação de ambientes de dias para horas."
-          - "Condução de consultoria de segurança e implementação de SAST (Checkmarx) e DAST (Acunetix) nos pipelines, alcançando cobertura de segurança em 100% das aplicações críticas."
-          - "Atuação em estrutura SAFe de larga escala como membro do System Team, garantindo integração contínua entre 8+ Agile Release Trains."
+          - "**CI/CD em escala**: Criei e mantive pipelines para Docker, Kubernetes, .Net Core, .Net Framework, NodeJS, Python, Gradle, Maven, PHP, SQL Server e PL/SQL — cobrindo todas as tecnologias do portfólio da empresa."
+          - "**IaC**: Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline no Azure DevOps, padronizando e agilizando a criação de novos ambientes."
+          - "**Segurança**: Conduzi consultoria e implementei SAST (Checkmarx) e DAST (Acunetix) nos pipelines de múltiplas aplicações, elevando o nível de segurança do ciclo de entrega."
+          - "**SAFe**: Atuação no System Team garantindo integração contínua entre os times, apoiando entre 5 e 10 squads no modelo de larga escala."
 
       - company: KROTON EDUCACIONAL
         position: ANALISTA DEVOPS
@@ -104,11 +103,12 @@ cv:
         start_date: 2018-08
         end_date: 2019-11
         location: Valinhos, SP
-        summary:
+        summary: "Evolução natural do estágio para o time permanente, atuando como membro do System Team no framework SAFe."
         highlights:
-          - "Implementei práticas DevOps em múltiplos times como membro do System Team (SAFe), gerenciando Azure DevOps (TFS2018/VSTS) e automatizando deploys com PowerShell."
-          - "Configurei agentes de build Windows e Linux para TFS2018 e integrei pipelines ao SonarQube/SonarCloud, estabelecendo quality gates para 30+ projetos."
-          - "Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização."
+          - "Gerenciei o Azure DevOps (TFS2018/VSTS) construindo pipelines de CI/CD e automatizando o processo de entrega com scripts PowerShell para múltiplos times de desenvolvimento."
+          - "Configurei agentes de build Windows e Linux para TFS2018 e integrei os pipelines ao SonarQube/SonarCloud, estabelecendo quality gates para múltiplos projetos."
+          - "Implementei práticas DevOps em diversos times como membro do System Team, garantindo integração contínua entre as squads no modelo SAFe."
+          - "Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização — papel que demonstrou confiança da liderança logo no início da carreira CLT."
 
       - company: KROTON EDUCACIONAL
         position: ESTÁGIO DEVOPS
@@ -116,11 +116,11 @@ cv:
         start_date: 2017-07
         end_date: 2018-08
         location: Valinhos, SP
-        summary:
+        summary: "Primeiro contato com o universo DevOps em um dos maiores grupos educacionais do Brasil, atuando diretamente no ciclo de entrega de software."
         highlights:
-          - "Automatizei o processo de deploy on-premises com PowerShell e TFS2015/TFS2018, eliminando deploys manuais e reduzindo erros de entrega."
-          - "Criei builds para .Net e PL/SQL Oracle com análise de qualidade via SonarQube, estabelecendo a base do pipeline de CI que seria evoluído nos anos seguintes."
-          - "Gerenciei o ciclo de vida do desenvolvimento utilizando Visual Studio e TFS2015/TFS2018, com suporte a versionamento e criação de branches."
+          - "Automatizei o processo de deploy on-premises com PowerShell e TFS2015/TFS2018, eliminando deploys manuais e reduzindo erros de entrega — base do pipeline de CI que seria evoluído nos anos seguintes."
+          - "Criei builds para tecnologias .Net e PL/SQL Oracle com análise de qualidade via SonarQube, estabelecendo padrões de qualidade de código desde o início da esteira."
+          - "Apoiei o ciclo de desenvolvimento gerenciando branches, permissões e versionamento de código no TFS, contribuindo para a organização do processo de entrega de múltiplos times."
 
     certificações:
       - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2026)**"
