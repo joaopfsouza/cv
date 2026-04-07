@@ -206,15 +206,15 @@ Contribuir como Engenheiro DevOps Sênior em times que valorizem automação, qu
   [
     #strong[KROTON EDUCACIONAL], ENGENHEIRO DEVOPS
 
-    #summary[Membro do System Team no framework SAFe, responsável por CI\/CD e IaC para mais de 100 repositórios e integração com 8+ ART teams.]
+    #summary[Promoção para Engenheiro dentro do mesmo time, assumindo responsabilidade técnica sobre CI\/CD e IaC para múltiplos repositórios, atendendo entre 5 e 10 times no framework SAFe.]
 
-    - Criei e mantive pipelines CI\/CD para Docker, Kubernetes, .Net, NodeJS, Python, PHP, Gradle, Maven, SQL Server e PL\/SQL — cobrindo 100\% das tecnologias do portfólio e mais de 100 repositórios no Azure DevOps.
+    - #strong[CI\/CD em escala]: Criei e mantive pipelines para Docker, Kubernetes, .Net Core, .Net Framework, NodeJS, Python, Gradle, Maven, PHP, SQL Server e PL\/SQL — cobrindo todas as tecnologias do portfólio da empresa.
 
-    - Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline, reduzindo tempo de criação de ambientes de dias para horas.
+    - #strong[IaC]: Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline no Azure DevOps, padronizando e agilizando a criação de novos ambientes.
 
-    - Condução de consultoria de segurança e implementação de SAST (Checkmarx) e DAST (Acunetix) nos pipelines, alcançando cobertura de segurança em 100\% das aplicações críticas.
+    - #strong[Segurança]: Conduzi consultoria e implementei SAST (Checkmarx) e DAST (Acunetix) nos pipelines de múltiplas aplicações, elevando o nível de segurança do ciclo de entrega.
 
-    - Atuação em estrutura SAFe de larga escala como membro do System Team, garantindo integração contínua entre 8+ Agile Release Trains.
+    - #strong[SAFe]: Atuação no System Team garantindo integração contínua entre os times, apoiando entre 5 e 10 squads no modelo de larga escala.
 
   ],
   [
@@ -229,11 +229,15 @@ Contribuir como Engenheiro DevOps Sênior em times que valorizem automação, qu
   [
     #strong[KROTON EDUCACIONAL], ANALISTA DEVOPS
 
-    - Implementei práticas DevOps em múltiplos times como membro do System Team (SAFe), gerenciando Azure DevOps (TFS2018\/VSTS) e automatizando deploys com PowerShell.
+    #summary[Evolução natural do estágio para o time permanente, atuando como membro do System Team no framework SAFe.]
 
-    - Configurei agentes de build Windows e Linux para TFS2018 e integrei pipelines ao SonarQube\/SonarCloud, estabelecendo quality gates para 30+ projetos.
+    - Gerenciei o Azure DevOps (TFS2018\/VSTS) construindo pipelines de CI\/CD e automatizando o processo de entrega com scripts PowerShell para múltiplos times de desenvolvimento.
 
-    - Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização.
+    - Configurei agentes de build Windows e Linux para TFS2018 e integrei os pipelines ao SonarQube\/SonarCloud, estabelecendo quality gates para múltiplos projetos.
+
+    - Implementei práticas DevOps em diversos times como membro do System Team, garantindo integração contínua entre as squads no modelo SAFe.
+
+    - Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização — papel que demonstrou confiança da liderança logo no início da carreira CLT.
 
   ],
   [
@@ -248,11 +252,13 @@ Contribuir como Engenheiro DevOps Sênior em times que valorizem automação, qu
   [
     #strong[KROTON EDUCACIONAL], ESTÁGIO DEVOPS
 
-    - Automatizei o processo de deploy on-premises com PowerShell e TFS2015\/TFS2018, eliminando deploys manuais e reduzindo erros de entrega.
+    #summary[Primeiro contato com o universo DevOps em um dos maiores grupos educacionais do Brasil, atuando diretamente no ciclo de entrega de software.]
 
-    - Criei builds para .Net e PL\/SQL Oracle com análise de qualidade via SonarQube, estabelecendo a base do pipeline de CI que seria evoluído nos anos seguintes.
+    - Automatizei o processo de deploy on-premises com PowerShell e TFS2015\/TFS2018, eliminando deploys manuais e reduzindo erros de entrega — base do pipeline de CI que seria evoluído nos anos seguintes.
 
-    - Gerenciei o ciclo de vida do desenvolvimento utilizando Visual Studio e TFS2015\/TFS2018, com suporte a versionamento e criação de branches.
+    - Criei builds para tecnologias .Net e PL\/SQL Oracle com análise de qualidade via SonarQube, estabelecendo padrões de qualidade de código desde o início da esteira.
+
+    - Apoiei o ciclo de desenvolvimento gerenciando branches, permissões e versionamento de código no TFS, contribuindo para a organização do processo de entrega de múltiplos times.
 
   ],
   [
