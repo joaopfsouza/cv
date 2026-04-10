@@ -7,12 +7,22 @@
 
 
 # Resumo
-Engenheiro DevOps com 7+ anos transformando infraestrutura em vantagem competitiva — de pipelines CI/CD em larga escala a ambientes Kubernetes em produção para fintech. Ao longo da carreira, atuei em ambientes de educação e fintech gerenciando stacks multi-cloud (Azure, AWS), automatizando processos críticos e integrando segurança diretamente nos pipelines (SAST/DAST, PCI DSS, SonarQube).
+Engenheiro DevOps com mais de 7 anos de experiência transformando infraestruturas complexas em ecossistemas ágeis, escaláveis e seguros. Base acadêmica em Engenharia Elétrica pela UNESP fundamenta um raciocínio voltado para automação de sistemas e resolução de problemas críticos.
 
-Sólida experiência em IaC com Terraform, Bicep e ARM Templates, além de vivência em SAFe, SCRUM e ITIL. Certificado Microsoft Certified: DevOps Engineer Expert (AZ-400) e Azure Administrator Associate (AZ-104).
+Ao longo da trajetória em setores de tecnologia, educação e fintech, especialização na modernização de serviços legados para arquiteturas baseadas em containers e na orquestração de ambientes Kubernetes em produção. Sólida vivência no gerenciamento de stacks multi-cloud (Azure, AWS) e no suporte a múltiplos times simultâneos sob os frameworks SAFe e SCRUM.
+
+**Cloud & IaC**: Especialista em ecossistema Azure, com experiência em provisionamento padronizado via Terraform, Bicep e ARM Templates.
+
+**CI/CD & Automação**: Implementação de pipelines em larga escala com Azure DevOps, GitHub Actions e GitLab CI/CD. Automação com Python, PowerShell e Shell Script.
+
+**DevSecOps & Qualidade**: Integração de segurança nas esteiras de deploy (SAST/DAST e SonarQube). Apoio técnico em conformidade e adequação PCI DSS para ambientes críticos.
+
+**Gestão Operacional & Agilidade**: Sustentação de ambientes produtivos, observabilidade e governança baseada em ITIL para cumprimento de SLAs e melhoria contínua.
+
+**Certificações Microsoft**: DevOps Engineer Expert (AZ-400) · Azure Administrator Associate (AZ-104) · Azure Fundamentals (AZ-900)
 
 # Objetivo
-Contribuir como Engenheiro DevOps Sênior em times que valorizem automação, qualidade e entrega contínua de valor em ambientes multi-cloud.
+Atuar como Engenheiro DevOps em times que valorizem automação, qualidade e entrega contínua de valor em ambientes multi-cloud.
 
 # Formação
 ## **Universidade Estadual Paulista (UNESP)**, Engenharia Elétrica
