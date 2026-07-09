@@ -1,12 +1,14 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+#import "@preview/rendercv:0.3.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
   name: "João Paulo Ferreira de Souza",
+  title: "João Paulo Ferreira de Souza - CV",
   footer: context { [#emph[João Paulo Ferreira de Souza -- #str(here().page())\/#str(counter(page).final().first())]] },
   top-note: [ #emph[Última atualização Abr 2026] ],
   locale-catalog-language: "pt",
+  text-direction: ltr,
   page-size: "us-letter",
   page-top-margin: 0.7in,
   page-bottom-margin: 0.7in,
@@ -67,6 +69,7 @@
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
   entries-short-second-row: true,
+  entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
   entries-summary-space-above: 0cm,
   entries-highlights-bullet:  "•" ,
@@ -161,7 +164,7 @@ Atuar como Engenheiro DevOps em times que valorizem automação, qualidade e ent
   [
     São Paulo, SP
 
-    Jul 2024 – presente
+    Jul 2024 – Mai 2026
 
   ],
 )

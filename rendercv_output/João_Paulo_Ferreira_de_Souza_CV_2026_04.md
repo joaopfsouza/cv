@@ -29,7 +29,9 @@ Atuar como Engenheiro DevOps em times que valorizem automação, qualidade e ent
 
 **Grad.**
 
+
 Bauru, SP
+
 
 2011 – 2018
 
@@ -42,7 +44,7 @@ Bauru, SP
 
 São Paulo, SP
 
-Jul 2024 – presente
+Jul 2024 – Mai 2026
 
 Parte do time de Infraestrutura e DevOps, atuando na modernização da stack tecnológica, automação e observabilidade em ambiente Azure (fintech).
 
