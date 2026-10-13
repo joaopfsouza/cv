@@ -50,6 +50,7 @@ Sugestão de como deixar o currículo fiel à experiência real, "sem sentir que
 - LinkedIn: competências principais na ordem Azure DevOps, CI/CD, Terraform, Microsoft Azure, Kubernetes.
 - Versão reduzida (2 páginas) criada em `cv_joao_paulo_resumido.yaml` e `_en`, só com cortes: sem os bullets temáticos do resumo, sem objetivo, sem PIBIC, sem FinOps e "Também acompanhei" na ACQIO, sem dados e infra/Git na Kumulus, sem a parte "com o time" no CI/CD da Kroton Engenheiro, Kroton Analista com 2 bullets, estágio com 1, sem os cursos 4Linux e desenvolvedor.io. `scripts/gerar_cv.py` gera as duas variantes (`_Resumido`). Completas com 3 páginas, reduzidas com 2.
 - `CLAUDE.md` e `atualizar-cv.md` atualizados com a regra das duas versões.
+- Commit 0e56678. Arquivos antigos `rendercv_output/..._CV_2026_04.{md,pdf,typ}` restaurados a pedido dele ("restaura o 2026_04 por favor").
 - Orientação: usar verbos que mostrem o grau real de participação (executei, participei, acompanhei), tirar o tom de sênior do resumo ("Especialista", "Atuação estratégica") e só manter em Conhecimentos o que ele consegue explicar. Nenhum arquivo do currículo foi alterado ainda.
 
 ## Decisões e preferências
