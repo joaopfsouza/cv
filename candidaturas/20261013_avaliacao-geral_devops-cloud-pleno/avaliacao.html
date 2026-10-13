@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avaliação geral do CV · DevOps/Cloud Pleno</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --text: #1d2330; --muted: #5c6575;
+    --border: #e3e6eb; --accent: #004f90;
+    --ok: #1a7f4b; --ok-bg: #e5f4ec; --mid: #9a6400; --mid-bg: #fdf1dc;
+    --bad: #b42318; --bad-bg: #fdeceb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151b; --surface: #1b2029; --text: #e8ebf0; --muted: #9aa3b2;
+      --border: #2c333f; --accent: #6cb4ff;
+      --ok: #5fd39a; --ok-bg: #173327; --mid: #f0b55a; --mid-bg: #3a2d14;
+      --bad: #ff8a80; --bad-bg: #3d1d1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { margin-bottom: 24px; }
+  header p { color: var(--muted); margin: 4px 0 0; }
+  h1 { font-size: 1.6rem; margin: 0; }
+  h2 { font-size: 1.15rem; margin: 0 0 12px; color: var(--accent); }
+  h3 { font-size: 1rem; margin: 18px 0 8px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+          border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .score { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .score strong { font-size: 3rem; line-height: 1; color: var(--accent); }
+  .score p { flex-basis: 100%; margin: 8px 0 0; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px;
+           font-size: .8rem; font-weight: 600; white-space: nowrap; }
+  .badge.ok { color: var(--ok); background: var(--ok-bg); }
+  .badge.parcial { color: var(--mid); background: var(--mid-bg); }
+  .badge.falta { color: var(--bad); background: var(--bad-bg); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+  td.pts { white-space: nowrap; text-align: right; }
+  ul, ol { margin: 0; padding-left: 20px; }
+  li + li { margin-top: 6px; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .aviso { border-left: 4px solid var(--mid); }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+  .tags li { margin: 0; padding: 2px 10px; border: 1px solid var(--border); border-radius: 999px; font-size: .9rem; }
+  code { font-size: .9em; }
+  @media (max-width: 560px) { th:nth-child(3), td:nth-child(3) { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Avaliação geral do currículo</h1>
+    <p>Sem empresa · Engenheiro(a) DevOps / Cloud Pleno (perfil de referência) · 13/10/2026</p>
+  </header>
+
+  <section class="card aviso">
+    <p class="muted"><strong>Não é uma vaga real.</strong> A nota compara o CV completo em PT (3 páginas) com um perfil típico de vaga DevOps/Cloud pleno no Brasil, montado pelo orientador. O perfil é realista para pleno: observabilidade como obrigatória e Kubernetes com operação básica aparecem na maioria dos anúncios desse nível. Em vagas focadas só em Azure DevOps, Kubernetes e observabilidade costumam cair para desejáveis, e a nota sobe.</p>
+  </section>
+
+  <section class="card score">
+    <strong>71%</strong>
+    <span class="badge ok">Boa compatibilidade (60–79%)</span>
+    <p class="muted">Obrigatórios: 5,5 de 8 pontos → 5,5 ÷ 8 × 70 = 48,1. Desejáveis: 6 de 8 pontos → 6 ÷ 8 × 30 = 22,5. Total: 48,1 + 22,5 = 70,6%, arredondado para 71%. Atende = 1, parcial = 0,5, ausente ou não atende = 0.</p>
+  </section>
+
+  <section class="card">
+    <h2>Resumo</h2>
+    <p>O núcleo do perfil é forte: mais de 7 anos seguidos de CI/CD no Azure DevOps, Terraform/Bicep/ARM em três empresas e AZ-400 e AZ-104 válidas. A nota cai em observabilidade, na profundidade com Kubernetes e AWS (feitos com o time) e na pouca visibilidade de Git e Linux no texto. Para vagas pleno com foco em Azure, o CV passa no filtro e se sustenta na entrevista; para vagas com peso em Kubernetes, SRE ou monitoração, vai ser cobrado.</p>
+  </section>
+
+  <section class="card">
+    <h2>Requisitos</h2>
+    <h3>Obrigatórios (70%)</h3>
+    <table>
+      <thead><tr><th>Requisito</th><th>Status</th><th>Evidência no CV</th><th>Pts</th></tr></thead>
+      <tbody>
+        <tr><td>Pipelines de CI/CD</td><td><span class="badge ok">Atende</span></td><td>Azure DevOps/TFS de 2017 a 2026 em todas as empresas; criou e manteve pipelines na Kroton, criou na Kumulus e na Solutis. GitHub Actions e GitLab como POC.</td><td class="pts">1</td></tr>
+        <tr><td>Nuvem pública</td><td><span class="badge ok">Atende</span></td><td>Azure como plataforma principal (administração na ACQIO, implantação na Kumulus), AZ-104.</td><td class="pts">1</td></tr>
+        <tr><td>Infraestrutura como código</td><td><span class="badge ok">Atende</span></td><td>Terraform e ARM por pipeline na Kroton, Bicep/ARM e Terraform para dev/hml/prod na Kumulus, ajustes de Terraform na ACQIO.</td><td class="pts">1</td></tr>
+        <tr><td>Docker</td><td><span class="badge ok">Atende</span></td><td>Pipelines para Docker na Kroton; build e deploy com Docker na ACQIO (com o time).</td><td class="pts">1</td></tr>
+        <tr><td>Kubernetes (deploy e operação básica)</td><td><span class="badge parcial">Parcial</span></td><td>Deploy atende: pipelines para Kubernetes na Kroton e Helm na ACQIO. Operação aparece como "participei com o time da administração".</td><td class="pts">0,5</td></tr>
+        <tr><td>Git e estratégias de branch</td><td><span class="badge parcial">Parcial</span></td><td>Gestão de branches no TFS (estágio) e apoio aos times no uso do Git (Kumulus). "Git" não está em Conhecimentos e nenhuma estratégia de branch é citada.</td><td class="pts">0,5</td></tr>
+        <tr><td>Linux e scripting</td><td><span class="badge parcial">Parcial</span></td><td>PowerShell atende (deploy, pipelines). Linux aparece só nos agentes de build; Bash está em Conhecimentos sem uso nas experiências. Python é estudo.</td><td class="pts">0,5</td></tr>
+        <tr><td>Observabilidade / monitoração</td><td><span class="badge falta">Não atende</span></td><td>Só "acompanhei a monitoração no Elastic, onde fiz alguns gráficos como aprendizado". Sem Prometheus, Grafana, Azure Monitor ou alertas.</td><td class="pts">0</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Desejáveis (30%)</h3>
+    <table>
+      <thead><tr><th>Requisito</th><th>Status</th><th>Evidência no CV</th><th>Pts</th></tr></thead>
+      <tbody>
+        <tr><td>Segunda nuvem</td><td><span class="badge parcial">Parcial</span></td><td>AWS na ACQIO, com o time. Consegue explicar, mas não há entrega própria.</td><td class="pts">0,5</td></tr>
+        <tr><td>GitOps / Helm / ArgoCD</td><td><span class="badge parcial">Parcial</span></td><td>Helm nos deploys da ACQIO (com o time). Sem GitOps ou ArgoCD.</td><td class="pts">0,5</td></tr>
+        <tr><td>DevSecOps</td><td><span class="badge ok">Atende</span></td><td>SonarQube integrado em várias empresas, com quality gates; apoio às primeiras implantações de Checkmarx e Acunetix; POC de Dependency Check.</td><td class="pts">1</td></tr>
+        <tr><td>Certificações de nuvem</td><td><span class="badge ok">Atende</span></td><td>AZ-400 (até 07/2027), AZ-104 (até 01/2028), AZ-900.</td><td class="pts">1</td></tr>
+        <tr><td>Redes em nuvem</td><td><span class="badge parcial">Parcial</span></td><td>Troca de certificados SSL/TLS (AKS, App Gateway), ajuste no Terraform da VPN S2S, certificado da P2S. Sem desenho de VNet.</td><td class="pts">0,5</td></tr>
+        <tr><td>Ambiente regulado / compliance</td><td><span class="badge ok">Atende</span></td><td>Administrou Azure DevOps e SonarQube em ambiente auditado por PCI DSS; acompanhou a adequação.</td><td class="pts">1</td></tr>
+        <tr><td>Inglês técnico e conversação</td><td><span class="badge parcial">Parcial</span></td><td>Leitura intermediária atende; conversação básica não.</td><td class="pts">0,5</td></tr>
+        <tr><td>Ágil e práticas de operação</td><td><span class="badge ok">Atende</span></td><td>System Team SAFe com 5 a 10 squads, Scrum, ambiente ITIL, sustentação de produção.</td><td class="pts">1</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="grid">
+    <section class="card"><h2>Pontos fortes</h2><ul>
+      <li>Trajetória contínua em DevOps desde 2017, com promoção no mesmo time (estagiário, analista, engenheiro). Isso pesa a favor de pleno.</li>
+      <li>CI/CD e IaC com entregas próprias e várias stacks (.NET, Node.js, Java via Gradle/Maven, Python, PL/SQL).</li>
+      <li>AZ-400 e AZ-104 válidas. Para vagas Azure, muitas vezes desempatam.</li>
+      <li>Qualidade e segurança no pipeline (SonarQube recorrente) e experiência em ambiente PCI DSS, bom para fintech e banco.</li>
+      <li>Os verbos mostram o papel real. Na entrevista técnica isso evita perguntas que derrubam o candidato.</li>
+    </ul></section>
+    <section class="card"><h2>Pontos fracos</h2><ul>
+      <li>Observabilidade é a maior lacuna. É obrigatória na maioria das vagas pleno.</li>
+      <li>Kubernetes e AWS aparecem como trabalho do time. O entrevistador vai pedir exemplos de troubleshooting.</li>
+      <li>Na ACQIO, a experiência mais recente, boa parte é "participei" ou "acompanhei". O recrutador olha primeiro para ela.</li>
+      <li>Nenhum número ou resultado em todo o CV (quantos pipelines, times, repositórios).</li>
+      <li>Saída da ACQIO em 05/2026 e intervalos entre empregos (10/2021 a 06/2022, 02/2023 a 06/2023). Vale ter uma resposta curta pronta.</li>
+      <li>Conversação em inglês básica fecha portas em multinacionais e vagas remotas para fora.</li>
+      <li>3 páginas é longo para pleno. A reduzida (2 páginas) é a melhor para enviar.</li>
+    </ul></section>
+  </div>
+
+  <section class="card">
+    <h2>Melhorias sugeridas</h2>
+    <ul>
+      <li><strong>Conhecimentos, CI/CD &amp; Automação:</strong> incluir "Git". O fato já está no CV (Kumulus e estágio), mas o ATS procura a palavra solta.</li>
+      <li><strong>Conhecimentos, Segurança &amp; Qualidade:</strong> incluir "Dependency Check (POC)". Cobre a palavra SCA sem exagerar.</li>
+      <li><strong>Objetivo:</strong> "ambientes multi-cloud" não combina com um CV centrado em Azure e AWS com o time. Trocar por "ambientes Azure" ou tirar o objetivo, como na reduzida.</li>
+      <li><strong>ACQIO, FinOps:</strong> cortar "contribuindo para a visibilidade financeira da nuvem". É um resultado que ele não informou e soa como enchimento.</li>
+      <li><strong>Versão reduzida:</strong> com o corte do bullet de infra/Git na Kumulus e dos bullets do resumo, as palavras "Git" e "DevSecOps" somem. Recolocar "Git" em Conhecimentos resolve o primeiro caso; "DevSecOps" pode entrar no rótulo de Conhecimentos ("DevSecOps &amp; Qualidade").</li>
+      <li><strong>ACQIO, Também acompanhei / Conhecimentos:</strong> se a resposta sobre monitoração (pergunta 1) trouxer algo que ele fez, entra como bullet próprio e em Conhecimentos.</li>
+      <li><strong>Kroton ou Conhecimentos:</strong> Linux e Bash só ganham destaque se a pergunta 3 confirmar uso real.</li>
+    </ul>
+    <p class="muted">Os ajustes ficam com o agente atualizar-cv. Nenhum item sugere trocar "participei" ou "acompanhei" por verbos mais fortes.</p>
+  </section>
+
+  <section class="card">
+    <h2>Palavras-chave ausentes</h2>
+    <ul class="tags">
+      <li>Observabilidade</li><li>Prometheus</li><li>Grafana</li><li>Azure Monitor</li><li>Application Insights</li><li>Log Analytics</li>
+      <li>Git (em Conhecimentos)</li><li>GitFlow / trunk-based</li><li>Linux (como competência)</li>
+      <li>GitOps</li><li>ArgoCD</li><li>Jenkins</li><li>SCA</li><li>VNet / VPC</li><li>RBAC / IAM</li>
+      <li>Gestão de incidentes</li><li>SRE</li><li>LGPD</li>
+    </ul>
+    <p class="muted">Só entram no CV as que tiverem base real. Prometheus, Grafana, ArgoCD e Jenkins hoje não têm.</p>
+  </section>
+
+  <section class="card">
+    <h2>Perguntas para o candidato</h2>
+    <ol>
+      <li>Em alguma empresa você configurou alertas, dashboards ou consultas de log no Azure Monitor, Application Insights ou Log Analytics, mesmo que pequeno? É a lacuna que mais pesa na nota.</li>
+      <li>Nos repositórios Git que você atendia, havia uma estratégia de branch definida (GitFlow, trunk-based) e branch policies com PR obrigatório? Quem configurava? Entra como palavra-chave e conta pontos no requisito de Git.</li>
+      <li>Fora os agentes de build, o que você fazia em Linux no dia a dia (scripts Bash, acesso a VMs, troubleshooting de pods)? Isso decide se Linux e Bash aparecem como competência.</li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>
