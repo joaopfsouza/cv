@@ -29,6 +29,8 @@ A conversa principal atua como **orientador** (definido em `.claude/agents/orien
 ```
 cv_joao_paulo.yaml          # fonte da verdade, PT-BR
 cv_joao_paulo_en.yaml       # tradução EN (mesmo conteúdo, locale english)
+cv_joao_paulo_resumido.yaml     # versão reduzida (2 páginas), derivada da completa PT
+cv_joao_paulo_resumido_en.yaml  # versão reduzida EN, mesmos cortes da PT
 linkedin/linkedin_PT.md     # textos prontos para colar no LinkedIn
 linkedin/linkedin_EN.md
 scripts/gerar_cv.py         # gera PDF/MD e copia para as pastas de saída
@@ -44,16 +46,20 @@ historico/
 rendercv_output/
     AAAAMMDD/João_Paulo_Ferreira_de_Souza_CV_PT_AAAA_MM_DD.{md,pdf}
     AAAAMMDD/João_Paulo_Ferreira_de_Souza_CV_EN_AAAA_MM_DD.{md,pdf}
+    AAAAMMDD/João_Paulo_Ferreira_de_Souza_CV_{PT,EN}_Resumido_AAAA_MM_DD.{md,pdf}
     AAAAMMDD/João_Paulo_Ferreira_de_Souza_LinkedIn_{PT,EN}_AAAA_MM_DD.md
     latest/João_Paulo_Ferreira_de_Souza_{PT,EN}.{md,pdf}
+    latest/João_Paulo_Ferreira_de_Souza_{PT,EN}_Resumido.{md,pdf}
     latest/João_Paulo_Ferreira_de_Souza_LinkedIn_{PT,EN}.md
 ```
+
+**Versões completa e reduzida.** A completa (`cv_joao_paulo.yaml` e `_en`) é a fonte da verdade. A reduzida só corta ou condensa, sem texto novo nem fato diferente. Toda mudança de conteúdo entra primeiro na completa PT, depois na completa EN, e então nas duas reduzidas (se o trecho existir nelas), na mesma rodada. A reduzida deve continuar com 2 páginas.
 
 ## Gerar o currículo
 
 ```bash
 uv tool install "rendercv[full]"   # uma vez
-uv run scripts/gerar_cv.py         # PT e EN, data de hoje
+uv run scripts/gerar_cv.py         # PT e EN, completa e reduzida, data de hoje
 uv run scripts/gerar_cv.py --lang PT --date 2026-10-13
 ```
 

@@ -2,7 +2,11 @@
 cv:
   name: João Paulo Ferreira de Souza
   # ── AUDIT: headline estava vazio — preenchido com keywords de alto impacto ──
-  headline: "DevOps Engineer | Kubernetes | Terraform | Azure | AWS | Python | Certified: 3x Azure"
+  # ── REVISÃO 2026-10-13 (honestidade): o headline agora segue o que ele fez de fato,
+  #    nesta ordem: Azure, Azure DevOps, CI/CD, Terraform e Kubernetes. Saíram AWS
+  #    (participou com o time), Python ("profissionalmente, não realizei nenhum código")
+  #    e "Certified: 3x Azure", que continua no resumo e em Certificações. ──
+  headline: "Engenheiro DevOps | Azure | Azure DevOps | CI/CD | Terraform | Kubernetes"
   location: Itapecerica da Serra, SP
   email: joao.ferreiradesouza@gmail.com
   photo:
@@ -15,18 +19,29 @@ cv:
   sections:
 
     # ── AUDIT v4: resumo atualizado com o texto publicado no LinkedIn ──
+    # ── REVISÃO 2026-10-13 (honestidade): tirado o tom de sênior ("Especialista em
+    #    ecossistema Azure", "transformando infraestruturas complexas em ecossistemas",
+    #    "larga escala", "especialização em... Kubernetes em produção"). O texto agora
+    #    descreve o que ele fez de fato, com destaque para CI/CD, Terraform/IaC e a
+    #    trajetória na Kroton. Nenhum fato novo; keywords de ATS mantidas. ──
     resumo:
-      - "Engenheiro DevOps com mais de 7 anos de experiência transformando infraestruturas complexas em ecossistemas ágeis, escaláveis e seguros. Base acadêmica em Engenharia Elétrica pela UNESP fundamenta um raciocínio voltado para automação de sistemas e resolução de problemas críticos."
-      - "Ao longo da trajetória em setores de tecnologia, educação e fintech, especialização na modernização de serviços legados para arquiteturas baseadas em containers e na orquestração de ambientes Kubernetes em produção. Sólida vivência no gerenciamento de stacks multi-cloud (Azure, AWS) e no suporte a múltiplos times simultâneos sob os frameworks SAFe e SCRUM."
+      - "Engenheiro DevOps com mais de 7 anos de experiência em CI/CD, infraestrutura como código e nuvem Azure. Comecei como estagiário na Kroton Educacional, passei a analista e fui promovido a engenheiro, sempre construindo e mantendo pipelines para vários times. Formado em Engenharia Elétrica pela UNESP."
+      - "Trabalhei nos setores de educação, tecnologia e fintech, atendendo vários times ao mesmo tempo em modelos SAFe e Scrum. Tenho vivência com Docker, Kubernetes (AKS) e Helm em pipelines de deploy, e com ambientes Azure e AWS."
 
-      - "**Cloud & IaC**: Especialista em ecossistema Azure, com experiência em provisionamento padronizado via Terraform, Bicep e ARM Templates."
+      - "**Cloud & IaC**: Azure como plataforma principal, com provisionamento via Terraform, Bicep e ARM Templates."
 
-      - "**CI/CD & Automação**: Implementação de pipelines em larga escala com Azure DevOps, GitHub Actions e GitLab CI/CD. Automação com Python, PowerShell e Shell Script."
+      # ── REVISÃO 2026-10-13 (honestidade): Azure DevOps é a ferramenta que ele usou de
+      #    fato; GitHub Actions e GitLab CI/CD foram POCs na Kumulus. Python saiu da
+      #    automação: ele só estudou ("profissionalmente, não realizei nenhum código"). ──
+      - "**CI/CD & Automação**: Criação e manutenção de pipelines no Azure DevOps para diversas tecnologias, com POCs em GitHub Actions e GitLab CI/CD. Automação com PowerShell e Shell Script."
 
-      - "**DevSecOps & Qualidade**: Integração de segurança nas esteiras de deploy (SAST/DAST e SonarQube). Apoio técnico em conformidade e adequação PCI DSS para ambientes críticos."
+      # ── REVISÃO 2026-10-13 (honestidade): SonarQube ele integrou aos pipelines na Kroton
+      #    e na Solutis. Em SAST/DAST ele apoiou a avaliação das ferramentas e ajudou a
+      #    consultoria nas primeiras implantações (Kroton); não foi ele quem integrou. ──
+      - "**DevSecOps & Qualidade**: Integração do SonarQube aos pipelines de CI/CD em várias empresas. Apoio na avaliação de ferramentas de SAST e DAST e nas primeiras implantações do Checkmarx e do Acunetix nos pipelines. Vivência em ambiente com requisitos PCI DSS."
 
-      - "**Gestão Operacional & Agilidade**: Sustentação de ambientes produtivos, observabilidade e governança baseada em ITIL para cumprimento de SLAs e melhoria contínua."
-      
+      - "**Operação & Sustentação**: Sustentação de ambientes de produção e administração do Azure DevOps e do SonarQube. Vivência em ambiente com processos ITIL."
+
       - "**Certificações Microsoft**: DevOps Engineer Expert (AZ-400) · Azure Administrator Associate (AZ-104) · Azure Fundamentals (AZ-900)"
 
     # ── AUDIT v4: objetivo sem menção a nível de senioridade ──
@@ -53,17 +68,30 @@ cv:
         start_date: 2024-07
         end_date: 2026-05
         location: São Paulo, SP
-        summary: "Parte do time de Infraestrutura e DevOps, atuando na modernização da stack tecnológica, automação e observabilidade em ambiente Azure (fintech)."
+        # ── REVISÃO 2026-10-13 (honestidade): cada item foi classificado pelo João Paulo
+        #    como "fiz", "participei com o time" ou "acompanhei", e o verbo agora mostra
+        #    esse papel. Itens que ele fez vêm primeiro. Saíram: automação de agentes
+        #    ("não fiz isso"), "10+ ambientes" nos certificados (trocou alguns, sem
+        #    quantidade), "monitoração contínua para alta disponibilidade" e os resultados
+        #    do item de modernização (drift, onboarding).
+        #    O que ele só acompanhou ficou num bullet curto no fim.
+        #    Fechamento 2026-10-13: Dependency Check voltou como POC rápida ("fiz apenas
+        #    uma poc rapida"); certificados ganharam a wiki com o passo a passo; Operação
+        #    inclui a administração de Azure DevOps e SonarQube em ambiente auditado por
+        #    PCI DSS ("permissões, criava recurso ... realizava configurações e atualização").
+        #    A adequação ao PCI DSS em si continua como "acompanhei". ──
+        summary: "Time de Infraestrutura e DevOps de uma fintech, com ambiente principal em Azure. Atuei em migrações, pipelines de CI/CD, Terraform e sustentação de produção."
         highlights:
-          - "**Modernização & IaC**: Atuação estratégica na transição de Cloud Services legados para containers (ACI e App Services). Todo o provisionamento padronizado via Terraform, eliminando drift de configuração e acelerando onboarding de novos ambientes."
+          - "**Dados & Mensageria**: Migrei o PostgreSQL de Single Server para Flexible Server no Azure. Recebi pronto o conector Debezium/Kafka que integra SQL Server ao Elastic Cloud e fiz os testes, as validações e o deploy em produção."
+          - "**CI/CD & Automação**: Participei com o time da criação de pipelines de build e deploy no Azure DevOps para aplicações Kotlin, Go e Django, com Docker e deploy em Kubernetes via Helm. Fiz POCs rápidas de Dependency Check, para análise de dependências, e de IA para code review em Pull Requests."
+          - "**Modernização & IaC**: Participei com o time da migração de Cloud Services legados para containers (ACI e App Services), com provisionamento em Terraform."
+          - "**Segurança**: Troquei os certificados SSL/TLS de AKS, App Gateway e Cloud Services, em contato com os fornecedores, e criei uma wiki com o passo a passo da troca. Participei com o time da integração do SonarQube com o Entra ID via SAML."
+          - "**Redes**: Atualizei o Terraform de uma VPN Site-to-Site já existente para incluir uma nova configuração e renovei o certificado de cliente da VPN Point-to-Site."
           # ── AUDIT: FinOps reescrito — participação real foi acompanhamento/monitoramento,
           #    não liderança direta. Números removidos por honestidade ──
           - "**FinOps**: Acompanhei e monitorei iniciativas de otimização de custos, incluindo redimensionamento de recursos ociosos e gestão de Reserved Instances (Reservations) no Azure e Databricks, contribuindo para a visibilidade financeira da nuvem."
-          - "**CI/CD & Automação**: Construção de pipelines de build e deploy no Azure DevOps para aplicações Kotlin, Go e Django com Docker e deploys Kubernetes via Helm. Automações para manutenção de agentes e atualização de bases de segurança (Dependency Check). POC com IA para automação de Code Review em Pull Requests."
-          - "**Segurança & Observabilidade**: Adequação para conformidade PCI DSS e gestão do ciclo de vida de certificados SSL/TLS em mais de 10 ambientes críticos (AKS, App Gateway, Cloud Services). Integração SAML via Entra ID com SonarQube. Monitoração contínua para garantia de alta disponibilidade."
-          - "**Dados & Mensageria**: Migração de PostgreSQL (Single para Flexible Server) no Azure. Configuração do conector Debezium/Kafka integrando SQL Server ao Elastic Cloud."
-          - "**Redes & Conectividade**: Configuração de VPN Site-to-Site com parceiros, gestão de ExpressRoute e VPN Point-to-Site."
-          - "**Gestão Operacional**: Administração multi-plataforma (Azure, AWS, Azure DevOps, Elastic Cloud, Kubernetes, SonarQube, MongoDB Atlas). Sustentação produtiva e participação ativa em ritos Scrum."
+          - "**Operação**: Administrei o ambiente Azure e, em ambiente auditado por PCI DSS, o Azure DevOps e o SonarQube (permissões, criação de recursos, configurações e atualizações). Participei com o time da administração de AWS, Elastic Cloud, Kubernetes e MongoDB Atlas. Sustentação de produção e participação nos ritos Scrum."
+          - "**Também acompanhei**: a adequação ao PCI DSS, a migração de versão do ExpressRoute e a monitoração no Elastic, onde fiz alguns gráficos como aprendizado."
 
       - company: SOLUTIS TECNOLOGIAS
         position: ANALISTA DE DEVOPS
@@ -71,13 +99,19 @@ cv:
         start_date: 2023-06
         end_date: 2024-06
         location: Salvador, BA
-        summary: "Referência técnica de DevOps para múltiplos times, com foco em qualidade, agilidade e cumprimento de SLAs via ITIL."
+        # ── REVISÃO 2026-10-13 (honestidade): o João Paulo confirmou que fez tudo do
+        #    item de ponto focal ("Realizei todas essas atividades") e a automação
+        #    ("Usando scripts na pipeline para algumas tarefas. Fiz"), que agora aparece
+        #    no tamanho real, sem "processos críticos" nem resultado. Saíram a investigação
+        #    de falhas, o "P1 abaixo de 2h", "garantir disponibilidade" e os SLAs ("não
+        #    participava desses problemas"). "Acompanhava raramente alguns deploys em
+        #    produção" ficou de fora: é pouco para um bullet e a sustentação já aparece
+        #    na ACQIO. "Domínio do Azure DevOps Server 2022" virou o que ele fazia
+        #    (pipelines e templates); a administração do servidor não era dele. ──
+        summary: "Ponto focal de DevOps para vários times de desenvolvimento, em um ambiente com processos ITIL."
         highlights:
-          # ── AUDIT: adicionado contexto de escala e SLA ──
-          - "Atuei como ponto focal técnico de DevOps para múltiplos times de desenvolvimento, apoiando configuração de pipelines CI/CD, criação de repositórios, integração com SonarQube e difusão da cultura DevOps."
-          - "Automatizei processos manuais críticos com PowerShell e Azure DevOps Server 2022, eliminando tarefas recorrentes e aumentando confiabilidade dos deploys."
-          - "Investigação de falhas e diagnóstico em aplicações em produção, garantindo disponibilidade e cumprimento de SLAs — tempo de resposta em incidentes P1 abaixo de 2h."
-          - "Domínio do Azure DevOps Server 2022 para gerenciar processos de desenvolvimento e ferramentas de DevOps em ambiente controlado por ITIL."
+          - "Configurei pipelines de CI/CD, criei repositórios e integrei o SonarQube para os times que atendia, além de ajudar a difundir a cultura DevOps entre eles."
+          - "Construí pipelines e templates no Azure DevOps Server 2022 e usei scripts PowerShell nos pipelines para automatizar algumas tarefas."
 
       - company: KUMULUS
         position: ANALISTA CLOUD & DEVOPS
@@ -85,13 +119,23 @@ cv:
         start_date: 2022-06
         end_date: 2023-02
         location: Campinas, SP
-        summary: "Atuação em projetos de clientes variados, construindo infraestrutura cloud e automatizando entregas de software."
+        # ── REVISÃO 2026-10-13 (honestidade): o João Paulo classificou cada item.
+        #    Pipelines no Azure DevOps e IaC (Bicep/ARM e Terraform) para dev, homologação
+        #    e produção: "FIZ". GitHub Actions e GitLab CI/CD: "POC". Data Factory, Synapse
+        #    e Databricks: "Fiz a criação via portal da Azure", sem pipelines de dados nem
+        #    IaC desses recursos. Infraestrutura no Azure e apoio com Git: "FIZ".
+        #    Saíram os resultados que ele não informou (padronização da entrega, menos
+        #    inconsistência entre ambientes, tempo de provisionamento, drift, onboarding
+        #    de projetos de analytics) e o "evolução" da infraestrutura.
+        #    Fechamento 2026-10-13: "Sim a Kumulus é uam consultoria" e "não [mantinha],
+        #    pois era consultoria e entregava o projeto pronto para o cliente". O summary
+        #    agora diz que é consultoria e os pipelines ficam só com "Criei". ──
+        summary: "Consultoria em Azure e DevOps: projetos de infraestrutura e CI/CD entregues prontos para clientes variados."
         highlights:
-          # ── AUDIT: Kumulus era lista de tecnologias sem contexto — reescrito com impacto ──
-          - "Construí e mantive pipelines CI/CD para stacks .Net Core, .Net Framework, NodeJS e Angular no Azure DevOps, GitHub Actions e GitLab CI/CD, padronizando o processo de entrega entre projetos e reduzindo inconsistências entre ambientes."
-          - "Padronizei ambientes de desenvolvimento, homologação e produção via IaC (Bicep/ARM Templates e Terraform), reduzindo tempo de provisionamento e drift de configuração."
-          - "Estruturei ambientes analíticos com Azure Data Factory, Synapse Analytics e Databricks para pipelines de dados e projetos de Data Science, acelerando o onboarding de novos projetos de analytics."
-          - "Implantação e evolução de infraestrutura Azure Cloud e suporte a versionamento Git para os times de desenvolvimento."
+          - "Criei pipelines de CI/CD no Azure DevOps para aplicações .NET Core, .NET Framework, Node.js e Angular. Fiz POCs de GitHub Actions e GitLab CI/CD."
+          - "Escrevi a infraestrutura como código, com Bicep/ARM Templates e Terraform, para os ambientes de desenvolvimento, homologação e produção dos projetos."
+          - "Provisionei pelo portal do Azure os recursos de Data Factory, Synapse Analytics e Databricks para projetos de dados e Data Science."
+          - "Implantei infraestrutura no Azure e apoiei os times de desenvolvimento no uso do Git."
 
       - company: KROTON EDUCACIONAL
         position: ENGENHEIRO DEVOPS
@@ -99,12 +143,29 @@ cv:
         start_date: 2019-11
         end_date: 2021-10
         location: São Paulo, SP
-        summary: "Promoção para Engenheiro dentro do mesmo time, assumindo responsabilidade técnica sobre CI/CD e IaC para múltiplos repositórios, atendendo entre 5 e 10 times no framework SAFe."
+        # ── REVISÃO 2026-10-13 (honestidade): o João Paulo classificou cada item.
+        #    Pipelines: Docker, Kubernetes, .NET Core, .NET Framework, Node.js, Python,
+        #    Gradle e Maven "(fiz)"; PHP e SQL Server "(Participei)"; PL/SQL "Fiz a build e
+        #    participei na construção do deploy". Saiu "cobrindo todas as tecnologias do
+        #    portfólio", que não dá para afirmar, e o "em escala" do título.
+        #    IaC com ARM Templates e Terraform por pipeline no Azure DevOps: "(FIZ)"; saiu
+        #    o resultado não informado (padronizar e agilizar novos ambientes).
+        #    SAST/DAST: "Apoiei e acompanhei consultorias para avaliar ferramentas de SAST e
+        #    DAST. E ajudei a consultoria nas primeiras implantações". Saíram "Conduzi
+        #    consultoria", "implementei" e "elevando o nível de segurança".
+        #    Promoção, responsabilidade técnica por CI/CD e IaC e System Team com 5 a 10
+        #    squads: "Está correto". Os 5 a 10 times ficaram só no bullet de SAFe, para
+        #    não repetir no summary; saíram "garantindo" e "larga escala".
+        #    Fechamento 2026-10-13: manutenção dos pipelines "Na Kroton, sim", então o
+        #    bullet de CI/CD voltou a "Criei e mantive" (só a parte dele). Checkmarx e
+        #    Acunetix ficam em Conhecimentos: ele consegue explicar numa entrevista como
+        #    entraram no pipeline ("Sim"). ──
+        summary: "Promovido a engenheiro no mesmo time, com responsabilidade técnica por CI/CD e IaC em vários repositórios."
         highlights:
-          - "**CI/CD em escala**: Criei e mantive pipelines para Docker, Kubernetes, .Net Core, .Net Framework, NodeJS, Python, Gradle, Maven, PHP, SQL Server e PL/SQL — cobrindo todas as tecnologias do portfólio da empresa."
-          - "**IaC**: Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline no Azure DevOps, padronizando e agilizando a criação de novos ambientes."
-          - "**Segurança**: Conduzi consultoria e implementei SAST (Checkmarx) e DAST (Acunetix) nos pipelines de múltiplas aplicações, elevando o nível de segurança do ciclo de entrega."
-          - "**SAFe**: Atuação no System Team garantindo integração contínua entre os times, apoiando entre 5 e 10 squads no modelo de larga escala."
+          - "**CI/CD**: Criei e mantive pipelines no Azure DevOps para Docker, Kubernetes, .NET Core, .NET Framework, Node.js, Python, Gradle e Maven, além da build de PL/SQL. Participei com o time dos pipelines de PHP e SQL Server e da construção do deploy de PL/SQL."
+          - "**IaC**: Provisionei ambientes Azure com ARM Templates e Terraform, executados por pipeline no Azure DevOps."
+          - "**Segurança**: Apoiei e acompanhei as consultorias que avaliaram ferramentas de SAST e DAST e ajudei a consultoria nas primeiras implantações do Checkmarx (SAST) e do Acunetix (DAST) nos pipelines de várias aplicações."
+          - "**SAFe**: Fiz parte do System Team, apoiando a integração contínua entre 5 e 10 squads."
 
       - company: KROTON EDUCACIONAL
         position: ANALISTA DEVOPS
@@ -112,12 +173,20 @@ cv:
         start_date: 2018-08
         end_date: 2019-11
         location: Valinhos, SP
-        summary: "Evolução natural do estágio para o time permanente, atuando como membro do System Team no framework SAFe."
+        # ── REVISÃO 2026-10-13 (honestidade): o João Paulo classificou cada item.
+        #    Azure DevOps: "Apenas construia os pipelines". Saiu "Gerenciei"; ficou a
+        #    construção de pipelines no TFS 2018/VSTS com PowerShell para vários times.
+        #    Agentes de build e SonarQube/SonarCloud com quality gates: "FIZ".
+        #    Práticas DevOps nos times: "Fiz"; System Team e SAFe saíram desta entrada
+        #    porque já aparecem no resumo e na entrada de Engenheiro, e saiu o "garantindo".
+        #    Co-orientação: "Pode retirar essse 'demonstrou confiança da liderança'".
+        #    Saíram essa frase e o "logo no início da carreira CLT". Summary encurtado. ──
+        summary: "Efetivado no mesmo time de DevOps ao fim do estágio."
         highlights:
-          - "Gerenciei o Azure DevOps (TFS2018/VSTS) construindo pipelines de CI/CD e automatizando o processo de entrega com scripts PowerShell para múltiplos times de desenvolvimento."
-          - "Configurei agentes de build Windows e Linux para TFS2018 e integrei os pipelines ao SonarQube/SonarCloud, estabelecendo quality gates para múltiplos projetos."
-          - "Implementei práticas DevOps em diversos times como membro do System Team, garantindo integração contínua entre as squads no modelo SAFe."
-          - "Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização — papel que demonstrou confiança da liderança logo no início da carreira CLT."
+          - "Construí pipelines de CI/CD no TFS 2018/VSTS (atual Azure DevOps), com scripts PowerShell, para vários times de desenvolvimento."
+          - "Configurei agentes de build Windows e Linux para o TFS 2018 e integrei os pipelines ao SonarQube/SonarCloud, com quality gates para vários projetos."
+          - "Implantei práticas DevOps nas squads de desenvolvimento, com foco em integração contínua."
+          - "Co-orientei estagiários do time e ajudei a difundir a cultura DevOps na empresa."
 
       - company: KROTON EDUCACIONAL
         position: ESTÁGIO DEVOPS
@@ -125,15 +194,23 @@ cv:
         start_date: 2017-07
         end_date: 2018-08
         location: Valinhos, SP
-        summary: "Primeiro contato com o universo DevOps em um dos maiores grupos educacionais do Brasil, atuando diretamente no ciclo de entrega de software."
+        # ── REVISÃO 2026-10-13 (honestidade): o João Paulo classificou cada item.
+        #    Automação do deploy on-premises: "FIZ". Ficaram a troca dos deploys manuais,
+        #    a redução de erros e a ligação com o CI que evoluiu depois, sem números e sem
+        #    o travessão. Builds .NET e PL/SQL com SonarQube: "(FIz Melhorias)", então
+        #    "Criei" virou "Fiz melhorias" e saiu "estabelecendo padrões de qualidade de
+        #    código desde o início da esteira". Branches, permissões e versionamento no
+        #    TFS: "FIZ"; "Apoiei... contribuindo para a organização" virou "Gerenciei".
+        #    Summary encurtado, sem "um dos maiores grupos educacionais do Brasil". ──
+        summary: "Estágio no time de DevOps, com automação de deploy, builds e versionamento no TFS."
         highlights:
-          - "Automatizei o processo de deploy on-premises com PowerShell e TFS2015/TFS2018, eliminando deploys manuais e reduzindo erros de entrega — base do pipeline de CI que seria evoluído nos anos seguintes."
-          - "Criei builds para tecnologias .Net e PL/SQL Oracle com análise de qualidade via SonarQube, estabelecendo padrões de qualidade de código desde o início da esteira."
-          - "Apoiei o ciclo de desenvolvimento gerenciando branches, permissões e versionamento de código no TFS, contribuindo para a organização do processo de entrega de múltiplos times."
+          - "Automatizei o deploy on-premises com PowerShell e TFS 2015/TFS 2018, substituindo os deploys manuais e reduzindo erros de entrega. Essa automação foi a base do CI que evoluiu nos anos seguintes."
+          - "Fiz melhorias nas builds .NET e PL/SQL Oracle, com análise de qualidade no SonarQube."
+          - "Gerenciei branches, permissões e versionamento de código no TFS para vários times."
 
     certificações:
-      - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2026)**"
-      - bullet: "**[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 a 01/2027)**"
+      - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2027)**"
+      - bullet: "**[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 a 01/2028)**"
       - bullet: "**[Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/7EE61E852D2840A1?sharingId=F7B7E665059A29E2)** **(2020)**"
       - bullet: "**DevOps Essentials — 4Linux** **(2021 — 20 horas)**"
       - bullet: "**[Introdução ao DevOps — desenvolvedor.io](https://desenvolvedor.io/certificado/d27fd066-071a-458b-9a74-51dd9bf858fa)** **(2020 — 40 horas)**"
@@ -143,21 +220,28 @@ cv:
         details: Leitura intermediária, compreensão básica, conversação básica e escrita básica.
 
     # ── AUDIT: skills reordenadas — core técnico primeiro, metodologias por último ──
+    # ── REVISÃO 2026-10-13 (honestidade): ficam só os itens que ele consegue explicar
+    #    numa entrevista. AWS, Kubernetes e Elastic: "o Resto conseguiria"; Kafka/Debezium
+    #    (explicar o fluxo): "Sim". Saíram MongoDB Atlas ("teria um pouco de dificuldade"),
+    #    ExpressRoute, PCI DSS e SAML (só acompanhou ou fez com o time; seguem citados na
+    #    ACQIO) e Data Factory/Synapse/Databricks (seguem na Kumulus, criados pelo portal).
+    #    Azure DevOps é a ferramenta principal; GitHub Actions e GitLab CI/CD foram POCs.
+    #    Python ficou como estudo: "tenho apenas estudo e consigo lidar com código". ──
     conhecimentos:
     - label: Orquestração & Containers
       details: Kubernetes (AKS), Docker, Helm
     - label: Plataformas Cloud
-      details: Azure Cloud (AKS, ACI, App Gateway, ExpressRoute, Entra ID, Databricks, Synapse, Data Factory), AWS
+      details: Azure Cloud (AKS, ACI, App Services, App Gateway, Entra ID), AWS
     - label: Infraestrutura como Código (IaC)
       details: Terraform, Bicep, ARM Templates
     - label: CI/CD & Automação
-      details: Azure DevOps, GitHub Actions, GitLab CI/CD
+      details: Azure DevOps (TFS/Azure DevOps Server); GitHub Actions e GitLab CI/CD (POC)
     - label: Linguagens de Programação & Scripting
-      details: Python, PowerShell, Bash, YAML, JSON, HCL
-    - label: Segurança, Compliance & Qualidade
-      details: SonarQube, SAST (Checkmarx), DAST (Acunetix), PCI DSS, SSL/TLS, SAML
+      details: PowerShell, Bash, YAML, JSON, HCL, Python (estudos)
+    - label: Segurança & Qualidade
+      details: SonarQube, SAST (Checkmarx), DAST (Acunetix), SSL/TLS
     - label: Banco de Dados & Mensageria
-      details: MongoDB Atlas, Elastic Cloud, Kafka, Debezium, PostgreSQL, SQL Server
+      details: PostgreSQL, SQL Server, Elastic Cloud, Kafka, Debezium
     - label: Metodologias & Frameworks
       details: SAFe, SCRUM, Kanban, ITIL
 

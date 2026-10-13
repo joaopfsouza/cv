@@ -1,0 +1,231 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# ── English version of cv_joao_paulo.yaml (the PT file is the source of truth).
+#    Same facts, numbers, technologies, dates, links and order. The wording is adapted
+#    for a native reader (past-tense action verbs, no subject in the summary), not
+#    translated word for word. Any change in the PT file must be mirrored here. ──
+cv:
+  name: João Paulo Ferreira de Souza
+  # ── Same as PT (REVISÃO 2026-10-13): headline follows what he actually did. AWS,
+  #    Python (self-study only) and the certification count left the headline; the
+  #    certifications stay in the summary and in Certifications. ──
+  headline: "DevOps Engineer | Azure | Azure DevOps | CI/CD | Terraform | Kubernetes"
+  location: Itapecerica da Serra, SP
+  email: joao.ferreiradesouza@gmail.com
+  photo:
+  phone: +55 (11) 91921-5622
+  website:
+  social_networks:
+    - network: LinkedIn
+      username: joaopfsouza
+  custom_connections:
+  sections:
+
+    # ── Same honesty review as PT (2026-10-13): no "Azure specialist", "large-scale"
+    #    or "running Kubernetes in production". Same facts, same keywords. ──
+    summary:
+      - "DevOps Engineer with 7+ years of experience in CI/CD, infrastructure as code and Azure. Started as an intern at Kroton Educacional, moved up to analyst and was promoted to engineer, building and maintaining pipelines for multiple teams throughout. B.Eng. in Electrical Engineering from UNESP."
+      - "Worked in education, technology and fintech, supporting several teams at once under SAFe and Scrum. Hands-on experience with Docker, Kubernetes (AKS) and Helm in deployment pipelines, and with Azure and AWS environments."
+
+      - "**Cloud & IaC**: Azure as the main platform, with provisioning through Terraform, Bicep and ARM Templates."
+
+      # ── Same as PT (2026-10-13): Azure DevOps is the tool he actually used;
+      #    GitHub Actions and GitLab CI/CD were PoCs at Kumulus. Python removed from
+      #    automation: self-study only, no professional code. ──
+      - "**CI/CD & Automation**: Built and maintained pipelines on Azure DevOps for a wide range of tech stacks, plus proofs of concept on GitHub Actions and GitLab CI/CD. Automation in PowerShell and shell scripting."
+
+      # ── Same as PT (2026-10-13): he integrated SonarQube into pipelines (Kroton,
+      #    Solutis). For SAST/DAST he supported the tool evaluation and helped the
+      #    consultancy with the first rollouts at Kroton; he did not integrate them himself. ──
+      - "**DevSecOps & Quality**: Integrated SonarQube into CI/CD pipelines at several companies. Supported the evaluation of SAST and DAST tools and the first Checkmarx and Acunetix rollouts in pipelines. Experience working in a PCI DSS environment."
+
+      - "**Operations & Support**: Production support and administration of Azure DevOps and SonarQube. Experience working in an ITIL environment."
+
+      - "**Microsoft Certifications**: DevOps Engineer Expert (AZ-400) · Azure Administrator Associate (AZ-104) · Azure Fundamentals (AZ-900)"
+
+    objective:
+      - "DevOps Engineer role on a team that values automation, quality and continuous delivery in multi-cloud environments."
+
+    education:
+      - institution: Universidade Estadual Paulista (UNESP)
+        area: Electrical Engineering
+        degree: B.Eng.
+        date:
+        start_date: 2011
+        end_date: 2018
+        location: Bauru, SP
+        summary:
+        # ── PIBIC is Brazil's national undergraduate research program; spelled out for foreign readers ──
+        highlights:
+          - "Undergraduate research scholarship (PIBIC/REITORIA/UNESP, 2012–2013): research on multi-agent algorithms for mobile robots with ultrasonic and infrared sensors."
+
+    experience:
+      - company: ACQIO
+        position: DEVOPS ENGINEER
+        date:
+        start_date: 2024-07
+        end_date: 2026-05
+        location: São Paulo, SP
+        # ── Same honesty review as PT (2026-10-13): verbs show his actual role
+        #    (did / worked with the team / followed). Items he owned come first.
+        #    Closing pass, same day: Dependency Check back as a quick PoC, the certificate
+        #    wiki, and Azure DevOps/SonarQube administration in a PCI DSS-audited
+        #    environment. The PCI DSS effort itself stays under "followed". ──
+        summary: "Infrastructure & DevOps team at a fintech running mainly on Azure. Worked on migrations, CI/CD pipelines, Terraform and production support."
+        highlights:
+          - "**Data & Messaging**: Migrated PostgreSQL on Azure from Single Server to Flexible Server. Took over an already-built Debezium/Kafka connector linking SQL Server to Elastic Cloud and handled its testing, validation and production deployment."
+          - "**CI/CD & Automation**: Worked with the team on build and deploy pipelines in Azure DevOps for Kotlin, Go and Django apps, using Docker and Helm-based Kubernetes deployments. Ran quick proofs of concept for Dependency Check (dependency scanning) and for AI-assisted code review on pull requests."
+          - "**Modernization & IaC**: Worked with the team on moving legacy Cloud Services to containers (ACI and App Services), provisioned with Terraform."
+          - "**Security**: Replaced SSL/TLS certificates for AKS, App Gateway and Cloud Services, coordinating with vendors, and wrote a step-by-step wiki for the process. Worked with the team on integrating SonarQube with Entra ID through SAML."
+          - "**Networking**: Updated the Terraform for an existing Site-to-Site VPN to add a new configuration, and renewed the client certificate for the Point-to-Site VPN."
+          # ── Same as PT: FinOps describes tracking and monitoring, not leading. No numbers. ──
+          - "**FinOps**: Tracked and monitored cost optimization initiatives, including rightsizing idle resources and managing Reserved Instances (Reservations) in Azure and Databricks, which improved visibility into cloud spending."
+          - "**Operations**: Administered the Azure environment, plus Azure DevOps and SonarQube in a PCI DSS-audited environment (permissions, resource creation, configuration and upgrades). Worked with the team on AWS, Elastic Cloud, Kubernetes and MongoDB Atlas administration. Supported production systems and took part in Scrum ceremonies."
+          - "**Exposure**: Followed the PCI DSS compliance effort, an ExpressRoute version migration and the Elastic monitoring work, building a few charts in Elastic to learn the tool."
+
+      - company: SOLUTIS TECNOLOGIAS
+        position: DEVOPS ANALYST
+        date:
+        start_date: 2023-06
+        end_date: 2024-06
+        location: Salvador, BA
+        # ── Same honesty review as PT (2026-10-13): removed production troubleshooting,
+        #    "P1 under 2 hours", availability and SLAs (he was not involved in incidents).
+        #    Automation is now sized to what he did (PowerShell scripts in pipelines for
+        #    some tasks). "Deep knowledge of Azure DevOps Server 2022" became what he
+        #    actually did there (pipelines and templates); he did not run the server. ──
+        summary: "DevOps point of contact for several development teams in an ITIL environment."
+        highlights:
+          - "Set up CI/CD pipelines, created repositories and integrated SonarQube for those teams, and helped spread DevOps practices across them."
+          - "Built pipelines and templates on Azure DevOps Server 2022 and used PowerShell scripts in the pipelines to automate some tasks."
+
+      - company: KUMULUS
+        position: CLOUD & DEVOPS ANALYST
+        date:
+        start_date: 2022-06
+        end_date: 2023-02
+        location: Campinas, SP
+        # ── Same honesty review as PT (2026-10-13): Azure DevOps pipelines and IaC were
+        #    his; GitHub Actions and GitLab CI/CD were PoCs; Data Factory, Synapse and
+        #    Databricks were created through the Azure portal (no data pipelines, no IaC
+        #    for them). Removed results he never reported (standardized delivery, fewer
+        #    inconsistencies, provisioning time, drift, analytics onboarding).
+        #    Closing pass, same day: Kumulus is a consultancy that handed finished projects
+        #    to clients, so the summary says so and pipelines stay "Built" (no "maintained"). ──
+        summary: "Azure and DevOps consultancy, delivering turnkey infrastructure and CI/CD projects to a range of clients."
+        highlights:
+          - "Built CI/CD pipelines on Azure DevOps for .NET Core, .NET Framework, Node.js and Angular applications. Ran proofs of concept on GitHub Actions and GitLab CI/CD."
+          - "Wrote the infrastructure as code, with Bicep/ARM Templates and Terraform, for the projects' development, staging and production environments."
+          - "Provisioned Data Factory, Synapse Analytics and Databricks resources through the Azure portal for data and Data Science projects."
+          - "Deployed Azure infrastructure and helped development teams work with Git."
+
+      - company: KROTON EDUCACIONAL
+        position: DEVOPS ENGINEER
+        date:
+        start_date: 2019-11
+        end_date: 2021-10
+        location: São Paulo, SP
+        # ── Same honesty review as PT (2026-10-13): pipelines for Docker, Kubernetes,
+        #    .NET Core, .NET Framework, Node.js, Python, Gradle, Maven and the PL/SQL build
+        #    were his; PHP, SQL Server and the PL/SQL deploy were team work. Removed
+        #    "every technology in the portfolio", the unreported IaC result, "security
+        #    consulting", "implemented" and "strengthening security". He supported the
+        #    SAST/DAST tool evaluation and helped the consultancy with the first rollouts.
+        #    The 5 to 10 squads now appear only in the SAFe bullet.
+        #    Closing pass, same day: he also maintained the pipelines at Kroton, so the
+        #    CI/CD bullet is back to "Built and maintained" (his part only). Checkmarx and
+        #    Acunetix stay in Skills: he can explain in an interview how they were added. ──
+        summary: "Promoted to engineer within the same team, with technical ownership of CI/CD and IaC across multiple repositories."
+        highlights:
+          - "**CI/CD**: Built and maintained Azure DevOps pipelines for Docker, Kubernetes, .NET Core, .NET Framework, Node.js, Python, Gradle and Maven, plus the PL/SQL build. Worked with the team on the PHP and SQL Server pipelines and on the PL/SQL deployment."
+          - "**IaC**: Provisioned Azure environments with ARM Templates and Terraform, run through Azure DevOps pipelines."
+          - "**Security**: Supported the consultancies that evaluated SAST and DAST tools, and helped the consultancy with the first Checkmarx (SAST) and Acunetix (DAST) rollouts in the pipelines of several applications."
+          - "**SAFe**: Member of the System Team, supporting continuous integration across 5 to 10 squads."
+
+      - company: KROTON EDUCACIONAL
+        position: DEVOPS ANALYST
+        date:
+        start_date: 2018-08
+        end_date: 2019-11
+        location: Valinhos, SP
+        # ── Same honesty review as PT (2026-10-13): he built the pipelines but did not
+        #    manage Azure DevOps, so "Managed" was removed. Build agents, SonarQube/
+        #    SonarCloud and DevOps practices confirmed as his own work. System Team/SAFe
+        #    removed here (already in the summary and the Engineer entry), as was
+        #    "ensuring". "Trusted by leadership" and "early in the first full-time role"
+        #    removed from the co-supervision item. ──
+        summary: "Hired full-time on the same DevOps team after the internship."
+        highlights:
+          - "Built CI/CD pipelines on TFS 2018/VSTS (now Azure DevOps) with PowerShell scripts for several development teams."
+          - "Configured Windows and Linux build agents for TFS 2018 and integrated pipelines with SonarQube/SonarCloud, with quality gates for several projects."
+          - "Introduced DevOps practices to the development squads, with a focus on continuous integration."
+          - "Co-supervised the team's interns and helped spread DevOps culture across the company."
+
+      - company: KROTON EDUCACIONAL
+        position: DEVOPS INTERN
+        date:
+        start_date: 2017-07
+        end_date: 2018-08
+        location: Valinhos, SP
+        # ── Same honesty review as PT (2026-10-13): deployment automation confirmed as
+        #    his (manual deploys replaced, fewer release errors, base of the later CI; no
+        #    numbers). He improved the .NET and PL/SQL builds rather than creating them, so
+        #    "Created" and "setting code quality standards" were removed. Branch,
+        #    permission and version control management in TFS confirmed as his. Summary
+        #    shortened. ──
+        summary: "Internship on the DevOps team, working on deployment automation, builds and version control in TFS."
+        highlights:
+          - "Automated on-premises deployments with PowerShell and TFS 2015/TFS 2018, replacing manual deploys and reducing release errors. This automation became the base of the CI process that evolved over the following years."
+          - "Improved the .NET and Oracle PL/SQL builds, with code quality analysis in SonarQube."
+          - "Managed branches, permissions and version control in TFS for several teams."
+
+    certifications:
+      - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 – 07/2027)**"
+      - bullet: "**[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 – 01/2028)**"
+      - bullet: "**[Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/7EE61E852D2840A1?sharingId=F7B7E665059A29E2)** **(2020)**"
+      - bullet: "**DevOps Essentials, 4Linux** **(2021, 20 hours)**"
+      # ── Course title kept in Portuguese (as on the certificate), with the English meaning ──
+      - bullet: "**[Introdução ao DevOps (Introduction to DevOps), desenvolvedor.io](https://desenvolvedor.io/certificado/d27fd066-071a-458b-9a74-51dd9bf858fa)** **(2020, 40 hours)**"
+
+    languages:
+      - label: English
+        details: Intermediate reading; basic listening, speaking and writing.
+
+    # ── Same as PT (REVISÃO 2026-10-13): only what he can explain in an interview.
+    #    Removed MongoDB Atlas, ExpressRoute, PCI DSS, SAML and Data Factory/Synapse/
+    #    Databricks (still mentioned in the ACQIO and Kumulus entries). Azure DevOps is
+    #    the main tool; GitHub Actions and GitLab CI/CD were PoCs; Python is self-study. ──
+    skills:
+    - label: Orchestration & Containers
+      details: Kubernetes (AKS), Docker, Helm
+    - label: Cloud Platforms
+      details: Azure (AKS, ACI, App Services, App Gateway, Entra ID), AWS
+    - label: Infrastructure as Code (IaC)
+      details: Terraform, Bicep, ARM Templates
+    - label: CI/CD & Automation
+      details: Azure DevOps (TFS/Azure DevOps Server); GitHub Actions and GitLab CI/CD (PoC)
+    - label: Programming & Scripting
+      details: PowerShell, Bash, YAML, JSON, HCL, Python (self-study)
+    - label: Security & Quality
+      details: SonarQube, SAST (Checkmarx), DAST (Acunetix), SSL/TLS
+    - label: Databases & Messaging
+      details: PostgreSQL, SQL Server, Elastic Cloud, Kafka, Debezium
+    - label: Methodologies & Frameworks
+      details: SAFe, Scrum, Kanban, ITIL
+
+design:
+  theme: classic
+
+locale:
+  language: english
+
+# ── Output paths and current_date are passed on the command line by scripts/gerar_cv.py,
+#    so render_command only keeps the on/off flags. ──
+settings:
+  current_date: '2026-10-13'
+  render_command:
+    dont_generate_pdf: false
+    dont_generate_markdown: false
+    dont_generate_typst: false
+    dont_generate_html: true
+    dont_generate_png: true
+  bold_keywords: []

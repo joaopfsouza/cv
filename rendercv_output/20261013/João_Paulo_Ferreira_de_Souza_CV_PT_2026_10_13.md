@@ -7,17 +7,17 @@
 
 
 # Resumo
-Engenheiro DevOps com mais de 7 anos de experiência transformando infraestruturas complexas em ecossistemas ágeis, escaláveis e seguros. Base acadêmica em Engenharia Elétrica pela UNESP fundamenta um raciocínio voltado para automação de sistemas e resolução de problemas críticos.
+Engenheiro DevOps com mais de 7 anos de experiência em CI/CD, infraestrutura como código e nuvem Azure. Comecei como estagiário na Kroton Educacional, passei a analista e fui promovido a engenheiro, sempre construindo e mantendo pipelines para vários times. Formado em Engenharia Elétrica pela UNESP.
 
-Ao longo da trajetória em setores de tecnologia, educação e fintech, especialização na modernização de serviços legados para arquiteturas baseadas em containers e na orquestração de ambientes Kubernetes em produção. Sólida vivência no gerenciamento de stacks multi-cloud (Azure, AWS) e no suporte a múltiplos times simultâneos sob os frameworks SAFe e SCRUM.
+Trabalhei nos setores de educação, tecnologia e fintech, atendendo vários times ao mesmo tempo em modelos SAFe e Scrum. Tenho vivência com Docker, Kubernetes (AKS) e Helm em pipelines de deploy, e com ambientes Azure e AWS.
 
-**Cloud & IaC**: Especialista em ecossistema Azure, com experiência em provisionamento padronizado via Terraform, Bicep e ARM Templates.
+**Cloud & IaC**: Azure como plataforma principal, com provisionamento via Terraform, Bicep e ARM Templates.
 
-**CI/CD & Automação**: Implementação de pipelines em larga escala com Azure DevOps, GitHub Actions e GitLab CI/CD. Automação com Python, PowerShell e Shell Script.
+**CI/CD & Automação**: Criação e manutenção de pipelines no Azure DevOps para diversas tecnologias, com POCs em GitHub Actions e GitLab CI/CD. Automação com PowerShell e Shell Script.
 
-**DevSecOps & Qualidade**: Integração de segurança nas esteiras de deploy (SAST/DAST e SonarQube). Apoio técnico em conformidade e adequação PCI DSS para ambientes críticos.
+**DevSecOps & Qualidade**: Integração do SonarQube aos pipelines de CI/CD em várias empresas. Apoio na avaliação de ferramentas de SAST e DAST e nas primeiras implantações do Checkmarx e do Acunetix nos pipelines. Vivência em ambiente com requisitos PCI DSS.
 
-**Gestão Operacional & Agilidade**: Sustentação de ambientes produtivos, observabilidade e governança baseada em ITIL para cumprimento de SLAs e melhoria contínua.
+**Operação & Sustentação**: Sustentação de ambientes de produção e administração do Azure DevOps e do SonarQube. Vivência em ambiente com processos ITIL.
 
 **Certificações Microsoft**: DevOps Engineer Expert (AZ-400) · Azure Administrator Associate (AZ-104) · Azure Fundamentals (AZ-900)
 
@@ -46,21 +46,23 @@ São Paulo, SP
 
 Jul 2024 – Mai 2026
 
-Parte do time de Infraestrutura e DevOps, atuando na modernização da stack tecnológica, automação e observabilidade em ambiente Azure (fintech).
+Time de Infraestrutura e DevOps de uma fintech, com ambiente principal em Azure. Atuei em migrações, pipelines de CI/CD, Terraform e sustentação de produção.
 
-- **Modernização & IaC**: Atuação estratégica na transição de Cloud Services legados para containers (ACI e App Services). Todo o provisionamento padronizado via Terraform, eliminando drift de configuração e acelerando onboarding de novos ambientes.
+- **Dados & Mensageria**: Migrei o PostgreSQL de Single Server para Flexible Server no Azure. Recebi pronto o conector Debezium/Kafka que integra SQL Server ao Elastic Cloud e fiz os testes, as validações e o deploy em produção.
+
+- **CI/CD & Automação**: Participei com o time da criação de pipelines de build e deploy no Azure DevOps para aplicações Kotlin, Go e Django, com Docker e deploy em Kubernetes via Helm. Fiz POCs rápidas de Dependency Check, para análise de dependências, e de IA para code review em Pull Requests.
+
+- **Modernização & IaC**: Participei com o time da migração de Cloud Services legados para containers (ACI e App Services), com provisionamento em Terraform.
+
+- **Segurança**: Troquei os certificados SSL/TLS de AKS, App Gateway e Cloud Services, em contato com os fornecedores, e criei uma wiki com o passo a passo da troca. Participei com o time da integração do SonarQube com o Entra ID via SAML.
+
+- **Redes**: Atualizei o Terraform de uma VPN Site-to-Site já existente para incluir uma nova configuração e renovei o certificado de cliente da VPN Point-to-Site.
 
 - **FinOps**: Acompanhei e monitorei iniciativas de otimização de custos, incluindo redimensionamento de recursos ociosos e gestão de Reserved Instances (Reservations) no Azure e Databricks, contribuindo para a visibilidade financeira da nuvem.
 
-- **CI/CD & Automação**: Construção de pipelines de build e deploy no Azure DevOps para aplicações Kotlin, Go e Django com Docker e deploys Kubernetes via Helm. Automações para manutenção de agentes e atualização de bases de segurança (Dependency Check). POC com IA para automação de Code Review em Pull Requests.
+- **Operação**: Administrei o ambiente Azure e, em ambiente auditado por PCI DSS, o Azure DevOps e o SonarQube (permissões, criação de recursos, configurações e atualizações). Participei com o time da administração de AWS, Elastic Cloud, Kubernetes e MongoDB Atlas. Sustentação de produção e participação nos ritos Scrum.
 
-- **Segurança & Observabilidade**: Adequação para conformidade PCI DSS e gestão do ciclo de vida de certificados SSL/TLS em mais de 10 ambientes críticos (AKS, App Gateway, Cloud Services). Integração SAML via Entra ID com SonarQube. Monitoração contínua para garantia de alta disponibilidade.
-
-- **Dados & Mensageria**: Migração de PostgreSQL (Single para Flexible Server) no Azure. Configuração do conector Debezium/Kafka integrando SQL Server ao Elastic Cloud.
-
-- **Redes & Conectividade**: Configuração de VPN Site-to-Site com parceiros, gestão de ExpressRoute e VPN Point-to-Site.
-
-- **Gestão Operacional**: Administração multi-plataforma (Azure, AWS, Azure DevOps, Elastic Cloud, Kubernetes, SonarQube, MongoDB Atlas). Sustentação produtiva e participação ativa em ritos Scrum.
+- **Também acompanhei**: a adequação ao PCI DSS, a migração de versão do ExpressRoute e a monitoração no Elastic, onde fiz alguns gráficos como aprendizado.
 
 
 
@@ -70,15 +72,11 @@ Salvador, BA
 
 Jun 2023 – Jun 2024
 
-Referência técnica de DevOps para múltiplos times, com foco em qualidade, agilidade e cumprimento de SLAs via ITIL.
+Ponto focal de DevOps para vários times de desenvolvimento, em um ambiente com processos ITIL.
 
-- Atuei como ponto focal técnico de DevOps para múltiplos times de desenvolvimento, apoiando configuração de pipelines CI/CD, criação de repositórios, integração com SonarQube e difusão da cultura DevOps.
+- Configurei pipelines de CI/CD, criei repositórios e integrei o SonarQube para os times que atendia, além de ajudar a difundir a cultura DevOps entre eles.
 
-- Automatizei processos manuais críticos com PowerShell e Azure DevOps Server 2022, eliminando tarefas recorrentes e aumentando confiabilidade dos deploys.
-
-- Investigação de falhas e diagnóstico em aplicações em produção, garantindo disponibilidade e cumprimento de SLAs — tempo de resposta em incidentes P1 abaixo de 2h.
-
-- Domínio do Azure DevOps Server 2022 para gerenciar processos de desenvolvimento e ferramentas de DevOps em ambiente controlado por ITIL.
+- Construí pipelines e templates no Azure DevOps Server 2022 e usei scripts PowerShell nos pipelines para automatizar algumas tarefas.
 
 
 
@@ -88,15 +86,15 @@ Campinas, SP
 
 Jun 2022 – Fev 2023
 
-Atuação em projetos de clientes variados, construindo infraestrutura cloud e automatizando entregas de software.
+Consultoria em Azure e DevOps: projetos de infraestrutura e CI/CD entregues prontos para clientes variados.
 
-- Construí e mantive pipelines CI/CD para stacks .Net Core, .Net Framework, NodeJS e Angular no Azure DevOps, GitHub Actions e GitLab CI/CD, padronizando o processo de entrega entre projetos e reduzindo inconsistências entre ambientes.
+- Criei pipelines de CI/CD no Azure DevOps para aplicações .NET Core, .NET Framework, Node.js e Angular. Fiz POCs de GitHub Actions e GitLab CI/CD.
 
-- Padronizei ambientes de desenvolvimento, homologação e produção via IaC (Bicep/ARM Templates e Terraform), reduzindo tempo de provisionamento e drift de configuração.
+- Escrevi a infraestrutura como código, com Bicep/ARM Templates e Terraform, para os ambientes de desenvolvimento, homologação e produção dos projetos.
 
-- Estruturei ambientes analíticos com Azure Data Factory, Synapse Analytics e Databricks para pipelines de dados e projetos de Data Science, acelerando o onboarding de novos projetos de analytics.
+- Provisionei pelo portal do Azure os recursos de Data Factory, Synapse Analytics e Databricks para projetos de dados e Data Science.
 
-- Implantação e evolução de infraestrutura Azure Cloud e suporte a versionamento Git para os times de desenvolvimento.
+- Implantei infraestrutura no Azure e apoiei os times de desenvolvimento no uso do Git.
 
 
 
@@ -106,15 +104,15 @@ São Paulo, SP
 
 Nov 2019 – Out 2021
 
-Promoção para Engenheiro dentro do mesmo time, assumindo responsabilidade técnica sobre CI/CD e IaC para múltiplos repositórios, atendendo entre 5 e 10 times no framework SAFe.
+Promovido a engenheiro no mesmo time, com responsabilidade técnica por CI/CD e IaC em vários repositórios.
 
-- **CI/CD em escala**: Criei e mantive pipelines para Docker, Kubernetes, .Net Core, .Net Framework, NodeJS, Python, Gradle, Maven, PHP, SQL Server e PL/SQL — cobrindo todas as tecnologias do portfólio da empresa.
+- **CI/CD**: Criei e mantive pipelines no Azure DevOps para Docker, Kubernetes, .NET Core, .NET Framework, Node.js, Python, Gradle e Maven, além da build de PL/SQL. Participei com o time dos pipelines de PHP e SQL Server e da construção do deploy de PL/SQL.
 
-- **IaC**: Provisionamento de ambientes Azure via ARM Templates e Terraform implementados via pipeline no Azure DevOps, padronizando e agilizando a criação de novos ambientes.
+- **IaC**: Provisionei ambientes Azure com ARM Templates e Terraform, executados por pipeline no Azure DevOps.
 
-- **Segurança**: Conduzi consultoria e implementei SAST (Checkmarx) e DAST (Acunetix) nos pipelines de múltiplas aplicações, elevando o nível de segurança do ciclo de entrega.
+- **Segurança**: Apoiei e acompanhei as consultorias que avaliaram ferramentas de SAST e DAST e ajudei a consultoria nas primeiras implantações do Checkmarx (SAST) e do Acunetix (DAST) nos pipelines de várias aplicações.
 
-- **SAFe**: Atuação no System Team garantindo integração contínua entre os times, apoiando entre 5 e 10 squads no modelo de larga escala.
+- **SAFe**: Fiz parte do System Team, apoiando a integração contínua entre 5 e 10 squads.
 
 
 
@@ -124,15 +122,15 @@ Valinhos, SP
 
 Ago 2018 – Nov 2019
 
-Evolução natural do estágio para o time permanente, atuando como membro do System Team no framework SAFe.
+Efetivado no mesmo time de DevOps ao fim do estágio.
 
-- Gerenciei o Azure DevOps (TFS2018/VSTS) construindo pipelines de CI/CD e automatizando o processo de entrega com scripts PowerShell para múltiplos times de desenvolvimento.
+- Construí pipelines de CI/CD no TFS 2018/VSTS (atual Azure DevOps), com scripts PowerShell, para vários times de desenvolvimento.
 
-- Configurei agentes de build Windows e Linux para TFS2018 e integrei os pipelines ao SonarQube/SonarCloud, estabelecendo quality gates para múltiplos projetos.
+- Configurei agentes de build Windows e Linux para o TFS 2018 e integrei os pipelines ao SonarQube/SonarCloud, com quality gates para vários projetos.
 
-- Implementei práticas DevOps em diversos times como membro do System Team, garantindo integração contínua entre as squads no modelo SAFe.
+- Implantei práticas DevOps nas squads de desenvolvimento, com foco em integração contínua.
 
-- Atuei como co-orientador de estágio, formando novos talentos e difundindo a cultura DevOps na organização — papel que demonstrou confiança da liderança logo no início da carreira CLT.
+- Co-orientei estagiários do time e ajudei a difundir a cultura DevOps na empresa.
 
 
 
@@ -142,20 +140,20 @@ Valinhos, SP
 
 Jul 2017 – Ago 2018
 
-Primeiro contato com o universo DevOps em um dos maiores grupos educacionais do Brasil, atuando diretamente no ciclo de entrega de software.
+Estágio no time de DevOps, com automação de deploy, builds e versionamento no TFS.
 
-- Automatizei o processo de deploy on-premises com PowerShell e TFS2015/TFS2018, eliminando deploys manuais e reduzindo erros de entrega — base do pipeline de CI que seria evoluído nos anos seguintes.
+- Automatizei o deploy on-premises com PowerShell e TFS 2015/TFS 2018, substituindo os deploys manuais e reduzindo erros de entrega. Essa automação foi a base do CI que evoluiu nos anos seguintes.
 
-- Criei builds para tecnologias .Net e PL/SQL Oracle com análise de qualidade via SonarQube, estabelecendo padrões de qualidade de código desde o início da esteira.
+- Fiz melhorias nas builds .NET e PL/SQL Oracle, com análise de qualidade no SonarQube.
 
-- Apoiei o ciclo de desenvolvimento gerenciando branches, permissões e versionamento de código no TFS, contribuindo para a organização do processo de entrega de múltiplos times.
+- Gerenciei branches, permissões e versionamento de código no TFS para vários times.
 
 
 
 # Certificações
-- **[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2026)**
+- **[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2027)**
 
-- **[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 a 01/2027)**
+- **[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 a 01/2028)**
 
 - **[Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/7EE61E852D2840A1?sharingId=F7B7E665059A29E2)** **(2020)**
 
@@ -169,16 +167,16 @@ Primeiro contato com o universo DevOps em um dos maiores grupos educacionais do 
 # Conhecimentos
 **Orquestração & Containers:** Kubernetes (AKS), Docker, Helm
 
-**Plataformas Cloud:** Azure Cloud (AKS, ACI, App Gateway, ExpressRoute, Entra ID, Databricks, Synapse, Data Factory), AWS
+**Plataformas Cloud:** Azure Cloud (AKS, ACI, App Services, App Gateway, Entra ID), AWS
 
 **Infraestrutura como Código (IaC):** Terraform, Bicep, ARM Templates
 
-**CI/CD & Automação:** Azure DevOps, GitHub Actions, GitLab CI/CD
+**CI/CD & Automação:** Azure DevOps (TFS/Azure DevOps Server); GitHub Actions e GitLab CI/CD (POC)
 
-**Linguagens de Programação & Scripting:** Python, PowerShell, Bash, YAML, JSON, HCL
+**Linguagens de Programação & Scripting:** PowerShell, Bash, YAML, JSON, HCL, Python (estudos)
 
-**Segurança, Compliance & Qualidade:** SonarQube, SAST (Checkmarx), DAST (Acunetix), PCI DSS, SSL/TLS, SAML
+**Segurança & Qualidade:** SonarQube, SAST (Checkmarx), DAST (Acunetix), SSL/TLS
 
-**Banco de Dados & Mensageria:** MongoDB Atlas, Elastic Cloud, Kafka, Debezium, PostgreSQL, SQL Server
+**Banco de Dados & Mensageria:** PostgreSQL, SQL Server, Elastic Cloud, Kafka, Debezium
 
 **Metodologias & Frameworks:** SAFe, SCRUM, Kanban, ITIL

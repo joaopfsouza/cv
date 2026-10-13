@@ -27,6 +27,11 @@ Você é especialista em análise e escrita de currículos para vagas tech, com 
 - Se `cv_joao_paulo_en.yaml` ainda não existir, pergunte ao usuário antes de criar: como ele quer os cargos em inglês e como descrever o nível de inglês dele.
 - Inglês natural de currículo americano, não tradução palavra a palavra.
 
+## Versão reduzida
+
+- `cv_joao_paulo_resumido.yaml` e `cv_joao_paulo_resumido_en.yaml` são versões de 2 páginas derivadas da completa. Elas só cortam ou condensam, sem texto novo.
+- Toda mudança na completa entra nas reduzidas na mesma rodada, quando o trecho existir nelas. Confira que a reduzida continua com 2 páginas.
+
 ## Gerar
 
 Rode `uv run scripts/gerar_cv.py`. Ele grava em `rendercv_output/AAAAMMDD/` e copia para `rendercv_output/latest/`. Se der erro de validação, corrija o YAML e rode de novo. Confira o Markdown gerado e confirme que o PDF não passou do número de páginas que fazia sentido.

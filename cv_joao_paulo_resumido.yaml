@@ -1,0 +1,171 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# ── VERSÃO RESUMIDA (2 páginas), derivada de cv_joao_paulo.yaml em 2026-10-13.
+#    A fonte da verdade continua sendo cv_joao_paulo.yaml: toda mudança de conteúdo
+#    entra lá primeiro e depois é repassada para cá (e para cv_joao_paulo_resumido_en.yaml).
+#    Esta versão só corta ou condensa; não tem nada que não esteja na completa.
+#    As decisões da revisão de honestidade (comentários "REVISÃO 2026-10-13") estão na
+#    versão completa e valem aqui.
+#    Cortado ou condensado em relação à completa:
+#    - Resumo: saíram os bullets temáticos (Cloud & IaC, CI/CD & Automação, DevSecOps &
+#      Qualidade, Operação & Sustentação, Certificações), que repetem Conhecimentos,
+#      Certificações e as experiências.
+#    - Objetivo: saiu (redundante com o título e o resumo).
+#    - Formação: saiu o detalhe da Iniciação Científica (PIBIC).
+#    - ACQIO: saíram os bullets de FinOps e "Também acompanhei".
+#    - Kumulus: saíram os bullets de Data Factory/Synapse/Databricks pelo portal e de
+#      infraestrutura no Azure com apoio no Git.
+#    - Kroton, Engenheiro DevOps: no bullet de CI/CD saiu a frase do que ele fez com o
+#      time (PHP, SQL Server e deploy de PL/SQL); fica só o que ele criou e manteve.
+#    - Kroton, Analista DevOps: summary saiu; ficaram só os bullets de pipelines e de
+#      agentes de build/SonarQube (saíram práticas DevOps nas squads e co-orientação).
+#    - Kroton, Estágio DevOps: summary saiu; ficou só o bullet da automação do deploy,
+#      sem a frase "Essa automação foi a base do CI..." (saíram melhorias nas builds e
+#      gestão de branches no TFS).
+#    - Certificações: saíram os cursos curtos (4Linux e desenvolvedor.io); as três
+#      certificações Microsoft ficam.
+#    Os cortes de Kumulus, Kroton Engenheiro e frase do estágio vieram de uma segunda
+#    rodada: sem eles o EN passava de 2 páginas. Ficaram nas duas línguas. ──
+cv:
+  name: João Paulo Ferreira de Souza
+  headline: "Engenheiro DevOps | Azure | Azure DevOps | CI/CD | Terraform | Kubernetes"
+  location: Itapecerica da Serra, SP
+  email: joao.ferreiradesouza@gmail.com
+  photo:
+  phone: +55 (11) 91921-5622
+  website:
+  social_networks:
+    - network: LinkedIn
+      username: joaopfsouza
+  custom_connections:
+  sections:
+
+    resumo:
+      - "Engenheiro DevOps com mais de 7 anos de experiência em CI/CD, infraestrutura como código e nuvem Azure. Comecei como estagiário na Kroton Educacional, passei a analista e fui promovido a engenheiro, sempre construindo e mantendo pipelines para vários times. Formado em Engenharia Elétrica pela UNESP."
+      - "Trabalhei nos setores de educação, tecnologia e fintech, atendendo vários times ao mesmo tempo em modelos SAFe e Scrum. Tenho vivência com Docker, Kubernetes (AKS) e Helm em pipelines de deploy, e com ambientes Azure e AWS."
+
+    formação:
+      - institution: Universidade Estadual Paulista (UNESP)
+        area: Engenharia Elétrica
+        degree: Grad.
+        date:
+        start_date: 2011
+        end_date: 2018
+        location: Bauru, SP
+        summary:
+        highlights:
+
+    experiências:
+      - company: ACQIO
+        position: ENGENHEIRO DEVOPS
+        date:
+        start_date: 2024-07
+        end_date: 2026-05
+        location: São Paulo, SP
+        summary: "Time de Infraestrutura e DevOps de uma fintech, com ambiente principal em Azure. Atuei em migrações, pipelines de CI/CD, Terraform e sustentação de produção."
+        highlights:
+          - "**Dados & Mensageria**: Migrei o PostgreSQL de Single Server para Flexible Server no Azure. Recebi pronto o conector Debezium/Kafka que integra SQL Server ao Elastic Cloud e fiz os testes, as validações e o deploy em produção."
+          - "**CI/CD & Automação**: Participei com o time da criação de pipelines de build e deploy no Azure DevOps para aplicações Kotlin, Go e Django, com Docker e deploy em Kubernetes via Helm. Fiz POCs rápidas de Dependency Check, para análise de dependências, e de IA para code review em Pull Requests."
+          - "**Modernização & IaC**: Participei com o time da migração de Cloud Services legados para containers (ACI e App Services), com provisionamento em Terraform."
+          - "**Segurança**: Troquei os certificados SSL/TLS de AKS, App Gateway e Cloud Services, em contato com os fornecedores, e criei uma wiki com o passo a passo da troca. Participei com o time da integração do SonarQube com o Entra ID via SAML."
+          - "**Redes**: Atualizei o Terraform de uma VPN Site-to-Site já existente para incluir uma nova configuração e renovei o certificado de cliente da VPN Point-to-Site."
+          - "**Operação**: Administrei o ambiente Azure e, em ambiente auditado por PCI DSS, o Azure DevOps e o SonarQube (permissões, criação de recursos, configurações e atualizações). Participei com o time da administração de AWS, Elastic Cloud, Kubernetes e MongoDB Atlas. Sustentação de produção e participação nos ritos Scrum."
+
+      - company: SOLUTIS TECNOLOGIAS
+        position: ANALISTA DE DEVOPS
+        date:
+        start_date: 2023-06
+        end_date: 2024-06
+        location: Salvador, BA
+        summary: "Ponto focal de DevOps para vários times de desenvolvimento, em um ambiente com processos ITIL."
+        highlights:
+          - "Configurei pipelines de CI/CD, criei repositórios e integrei o SonarQube para os times que atendia, além de ajudar a difundir a cultura DevOps entre eles."
+          - "Construí pipelines e templates no Azure DevOps Server 2022 e usei scripts PowerShell nos pipelines para automatizar algumas tarefas."
+
+      - company: KUMULUS
+        position: ANALISTA CLOUD & DEVOPS
+        date:
+        start_date: 2022-06
+        end_date: 2023-02
+        location: Campinas, SP
+        summary: "Consultoria em Azure e DevOps: projetos de infraestrutura e CI/CD entregues prontos para clientes variados."
+        highlights:
+          - "Criei pipelines de CI/CD no Azure DevOps para aplicações .NET Core, .NET Framework, Node.js e Angular. Fiz POCs de GitHub Actions e GitLab CI/CD."
+          - "Escrevi a infraestrutura como código, com Bicep/ARM Templates e Terraform, para os ambientes de desenvolvimento, homologação e produção dos projetos."
+
+      - company: KROTON EDUCACIONAL
+        position: ENGENHEIRO DEVOPS
+        date:
+        start_date: 2019-11
+        end_date: 2021-10
+        location: São Paulo, SP
+        summary: "Promovido a engenheiro no mesmo time, com responsabilidade técnica por CI/CD e IaC em vários repositórios."
+        highlights:
+          - "**CI/CD**: Criei e mantive pipelines no Azure DevOps para Docker, Kubernetes, .NET Core, .NET Framework, Node.js, Python, Gradle e Maven, além da build de PL/SQL."
+          - "**IaC**: Provisionei ambientes Azure com ARM Templates e Terraform, executados por pipeline no Azure DevOps."
+          - "**Segurança**: Apoiei e acompanhei as consultorias que avaliaram ferramentas de SAST e DAST e ajudei a consultoria nas primeiras implantações do Checkmarx (SAST) e do Acunetix (DAST) nos pipelines de várias aplicações."
+          - "**SAFe**: Fiz parte do System Team, apoiando a integração contínua entre 5 e 10 squads."
+
+      - company: KROTON EDUCACIONAL
+        position: ANALISTA DEVOPS
+        date:
+        start_date: 2018-08
+        end_date: 2019-11
+        location: Valinhos, SP
+        summary:
+        highlights:
+          - "Construí pipelines de CI/CD no TFS 2018/VSTS (atual Azure DevOps), com scripts PowerShell, para vários times de desenvolvimento."
+          - "Configurei agentes de build Windows e Linux para o TFS 2018 e integrei os pipelines ao SonarQube/SonarCloud, com quality gates para vários projetos."
+
+      - company: KROTON EDUCACIONAL
+        position: ESTÁGIO DEVOPS
+        date:
+        start_date: 2017-07
+        end_date: 2018-08
+        location: Valinhos, SP
+        summary:
+        highlights:
+          - "Automatizei o deploy on-premises com PowerShell e TFS 2015/TFS 2018, substituindo os deploys manuais e reduzindo erros de entrega."
+
+    certificações:
+      - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 a 07/2027)**"
+      - bullet: "**[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 a 01/2028)**"
+      - bullet: "**[Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/7EE61E852D2840A1?sharingId=F7B7E665059A29E2)** **(2020)**"
+
+    idiomas:
+      - label: Inglês
+        details: Leitura intermediária, compreensão básica, conversação básica e escrita básica.
+
+    conhecimentos:
+    - label: Orquestração & Containers
+      details: Kubernetes (AKS), Docker, Helm
+    - label: Plataformas Cloud
+      details: Azure Cloud (AKS, ACI, App Services, App Gateway, Entra ID), AWS
+    - label: Infraestrutura como Código (IaC)
+      details: Terraform, Bicep, ARM Templates
+    - label: CI/CD & Automação
+      details: Azure DevOps (TFS/Azure DevOps Server); GitHub Actions e GitLab CI/CD (POC)
+    - label: Linguagens de Programação & Scripting
+      details: PowerShell, Bash, YAML, JSON, HCL, Python (estudos)
+    - label: Segurança & Qualidade
+      details: SonarQube, SAST (Checkmarx), DAST (Acunetix), SSL/TLS
+    - label: Banco de Dados & Mensageria
+      details: PostgreSQL, SQL Server, Elastic Cloud, Kafka, Debezium
+    - label: Metodologias & Frameworks
+      details: SAFe, SCRUM, Kanban, ITIL
+
+design:
+  theme: classic
+
+locale:
+  language: portuguese
+
+# ── Caminhos de saída e current_date vêm da linha de comando (scripts/gerar_cv.py). ──
+settings:
+  current_date: '2026-10-13'
+  render_command:
+    dont_generate_pdf: false
+    dont_generate_markdown: false
+    dont_generate_typst: false
+    dont_generate_html: true
+    dont_generate_png: true
+  bold_keywords: []

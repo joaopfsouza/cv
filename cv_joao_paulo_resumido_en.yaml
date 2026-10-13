@@ -1,0 +1,172 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# ── SHORT VERSION (2 pages), English counterpart of cv_joao_paulo_resumido.yaml, derived
+#    from cv_joao_paulo_en.yaml on 2026-10-13. The full PT file (cv_joao_paulo.yaml) is
+#    still the source of truth: content changes go there first, then to the full EN file
+#    and to both short versions. This version only cuts or condenses; nothing here is
+#    missing from the full version. The honesty review notes ("REVISÃO 2026-10-13") live
+#    in the full files and apply here too.
+#    Cut or condensed compared with the full version (same cuts as the PT short version):
+#    - Summary: removed the topic bullets (Cloud & IaC, CI/CD & Automation, DevSecOps &
+#      Quality, Operations & Support, Microsoft Certifications), which repeat Skills,
+#      Certifications and the experience entries.
+#    - Objective: removed (redundant with the headline and summary).
+#    - Education: removed the undergraduate research (PIBIC) detail.
+#    - ACQIO: removed the FinOps and "Exposure" bullets.
+#    - Kumulus: removed the Data Factory/Synapse/Databricks (Azure portal) bullet and the
+#      Azure infrastructure/Git support bullet.
+#    - Kroton, DevOps Engineer: the CI/CD bullet dropped the team-work sentence (PHP, SQL
+#      Server, PL/SQL deployment); only what he built and maintained stays.
+#    - Kroton, DevOps Analyst: summary removed; kept only the pipelines and the build
+#      agents/SonarQube bullets (removed DevOps practices in squads and co-supervision).
+#    - Kroton, DevOps Intern: summary removed; kept only the deployment automation bullet,
+#      without the "This automation became the base of the CI..." sentence (removed build
+#      improvements and TFS branch management).
+#    - Certifications: removed the short courses (4Linux and desenvolvedor.io); the three
+#      Microsoft certifications stay.
+#    The Kumulus, Kroton Engineer and internship-sentence cuts came from a second pass:
+#    without them the EN version ran past 2 pages. Applied to both languages. ──
+cv:
+  name: João Paulo Ferreira de Souza
+  headline: "DevOps Engineer | Azure | Azure DevOps | CI/CD | Terraform | Kubernetes"
+  location: Itapecerica da Serra, SP
+  email: joao.ferreiradesouza@gmail.com
+  photo:
+  phone: +55 (11) 91921-5622
+  website:
+  social_networks:
+    - network: LinkedIn
+      username: joaopfsouza
+  custom_connections:
+  sections:
+
+    summary:
+      - "DevOps Engineer with 7+ years of experience in CI/CD, infrastructure as code and Azure. Started as an intern at Kroton Educacional, moved up to analyst and was promoted to engineer, building and maintaining pipelines for multiple teams throughout. B.Eng. in Electrical Engineering from UNESP."
+      - "Worked in education, technology and fintech, supporting several teams at once under SAFe and Scrum. Hands-on experience with Docker, Kubernetes (AKS) and Helm in deployment pipelines, and with Azure and AWS environments."
+
+    education:
+      - institution: Universidade Estadual Paulista (UNESP)
+        area: Electrical Engineering
+        degree: B.Eng.
+        date:
+        start_date: 2011
+        end_date: 2018
+        location: Bauru, SP
+        summary:
+        highlights:
+
+    experience:
+      - company: ACQIO
+        position: DEVOPS ENGINEER
+        date:
+        start_date: 2024-07
+        end_date: 2026-05
+        location: São Paulo, SP
+        summary: "Infrastructure & DevOps team at a fintech running mainly on Azure. Worked on migrations, CI/CD pipelines, Terraform and production support."
+        highlights:
+          - "**Data & Messaging**: Migrated PostgreSQL on Azure from Single Server to Flexible Server. Took over an already-built Debezium/Kafka connector linking SQL Server to Elastic Cloud and handled its testing, validation and production deployment."
+          - "**CI/CD & Automation**: Worked with the team on build and deploy pipelines in Azure DevOps for Kotlin, Go and Django apps, using Docker and Helm-based Kubernetes deployments. Ran quick proofs of concept for Dependency Check (dependency scanning) and for AI-assisted code review on pull requests."
+          - "**Modernization & IaC**: Worked with the team on moving legacy Cloud Services to containers (ACI and App Services), provisioned with Terraform."
+          - "**Security**: Replaced SSL/TLS certificates for AKS, App Gateway and Cloud Services, coordinating with vendors, and wrote a step-by-step wiki for the process. Worked with the team on integrating SonarQube with Entra ID through SAML."
+          - "**Networking**: Updated the Terraform for an existing Site-to-Site VPN to add a new configuration, and renewed the client certificate for the Point-to-Site VPN."
+          - "**Operations**: Administered the Azure environment, plus Azure DevOps and SonarQube in a PCI DSS-audited environment (permissions, resource creation, configuration and upgrades). Worked with the team on AWS, Elastic Cloud, Kubernetes and MongoDB Atlas administration. Supported production systems and took part in Scrum ceremonies."
+
+      - company: SOLUTIS TECNOLOGIAS
+        position: DEVOPS ANALYST
+        date:
+        start_date: 2023-06
+        end_date: 2024-06
+        location: Salvador, BA
+        summary: "DevOps point of contact for several development teams in an ITIL environment."
+        highlights:
+          - "Set up CI/CD pipelines, created repositories and integrated SonarQube for those teams, and helped spread DevOps practices across them."
+          - "Built pipelines and templates on Azure DevOps Server 2022 and used PowerShell scripts in the pipelines to automate some tasks."
+
+      - company: KUMULUS
+        position: CLOUD & DEVOPS ANALYST
+        date:
+        start_date: 2022-06
+        end_date: 2023-02
+        location: Campinas, SP
+        summary: "Azure and DevOps consultancy, delivering turnkey infrastructure and CI/CD projects to a range of clients."
+        highlights:
+          - "Built CI/CD pipelines on Azure DevOps for .NET Core, .NET Framework, Node.js and Angular applications. Ran proofs of concept on GitHub Actions and GitLab CI/CD."
+          - "Wrote the infrastructure as code, with Bicep/ARM Templates and Terraform, for the projects' development, staging and production environments."
+
+      - company: KROTON EDUCACIONAL
+        position: DEVOPS ENGINEER
+        date:
+        start_date: 2019-11
+        end_date: 2021-10
+        location: São Paulo, SP
+        summary: "Promoted to engineer within the same team, with technical ownership of CI/CD and IaC across multiple repositories."
+        highlights:
+          - "**CI/CD**: Built and maintained Azure DevOps pipelines for Docker, Kubernetes, .NET Core, .NET Framework, Node.js, Python, Gradle and Maven, plus the PL/SQL build."
+          - "**IaC**: Provisioned Azure environments with ARM Templates and Terraform, run through Azure DevOps pipelines."
+          - "**Security**: Supported the consultancies that evaluated SAST and DAST tools, and helped the consultancy with the first Checkmarx (SAST) and Acunetix (DAST) rollouts in the pipelines of several applications."
+          - "**SAFe**: Member of the System Team, supporting continuous integration across 5 to 10 squads."
+
+      - company: KROTON EDUCACIONAL
+        position: DEVOPS ANALYST
+        date:
+        start_date: 2018-08
+        end_date: 2019-11
+        location: Valinhos, SP
+        summary:
+        highlights:
+          - "Built CI/CD pipelines on TFS 2018/VSTS (now Azure DevOps) with PowerShell scripts for several development teams."
+          - "Configured Windows and Linux build agents for TFS 2018 and integrated pipelines with SonarQube/SonarCloud, with quality gates for several projects."
+
+      - company: KROTON EDUCACIONAL
+        position: DEVOPS INTERN
+        date:
+        start_date: 2017-07
+        end_date: 2018-08
+        location: Valinhos, SP
+        summary:
+        highlights:
+          - "Automated on-premises deployments with PowerShell and TFS 2015/TFS 2018, replacing manual deploys and reducing release errors."
+
+    certifications:
+      - bullet: "**[Microsoft Certified: DevOps Engineer Expert (AZ-400)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/9660F77B9114B416?sharingId=F7B7E665059A29E2)** **(07/2023 – 07/2027)**"
+      - bullet: "**[Microsoft Certified: Azure Administrator Associate (AZ-104)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/D7D6B5A081CD8300?sharingId=F7B7E665059A29E2)** **(01/2023 – 01/2028)**"
+      - bullet: "**[Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/api/credentials/share/en-us/joaosouza/7EE61E852D2840A1?sharingId=F7B7E665059A29E2)** **(2020)**"
+
+    languages:
+      - label: English
+        details: Intermediate reading; basic listening, speaking and writing.
+
+    skills:
+    - label: Orchestration & Containers
+      details: Kubernetes (AKS), Docker, Helm
+    - label: Cloud Platforms
+      details: Azure (AKS, ACI, App Services, App Gateway, Entra ID), AWS
+    - label: Infrastructure as Code (IaC)
+      details: Terraform, Bicep, ARM Templates
+    - label: CI/CD & Automation
+      details: Azure DevOps (TFS/Azure DevOps Server); GitHub Actions and GitLab CI/CD (PoC)
+    - label: Programming & Scripting
+      details: PowerShell, Bash, YAML, JSON, HCL, Python (self-study)
+    - label: Security & Quality
+      details: SonarQube, SAST (Checkmarx), DAST (Acunetix), SSL/TLS
+    - label: Databases & Messaging
+      details: PostgreSQL, SQL Server, Elastic Cloud, Kafka, Debezium
+    - label: Methodologies & Frameworks
+      details: SAFe, Scrum, Kanban, ITIL
+
+design:
+  theme: classic
+
+locale:
+  language: english
+
+# ── Output paths and current_date are passed on the command line by scripts/gerar_cv.py,
+#    so render_command only keeps the on/off flags. ──
+settings:
+  current_date: '2026-10-13'
+  render_command:
+    dont_generate_pdf: false
+    dont_generate_markdown: false
+    dont_generate_typst: false
+    dont_generate_html: true
+    dont_generate_png: true
+  bold_keywords: []

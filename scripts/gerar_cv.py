@@ -4,16 +4,25 @@
 # ///
 """Gera o currículo em PT e EN (Markdown e PDF) com o RenderCV.
 
+Cada idioma tem duas variantes:
+    completa  cv_joao_paulo.yaml / cv_joao_paulo_en.yaml (fonte da verdade)
+    resumida  cv_joao_paulo_resumido.yaml / cv_joao_paulo_resumido_en.yaml (2 páginas,
+              derivada da completa; gerada só se o arquivo existir)
+
 Uso:
-    uv run scripts/gerar_cv.py            # gera todos os idiomas disponíveis
-    uv run scripts/gerar_cv.py --lang PT  # gera só um idioma
+    uv run scripts/gerar_cv.py            # gera todos os idiomas, completa e resumida
+    uv run scripts/gerar_cv.py --lang PT  # gera só um idioma (as duas variantes)
     uv run scripts/gerar_cv.py --date 2026-10-13
 
 Saída:
     rendercv_output/AAAAMMDD/<Nome>_CV_<LANG>_AAAA_MM_DD.{md,pdf}
+    rendercv_output/AAAAMMDD/<Nome>_CV_<LANG>_Resumido_AAAA_MM_DD.{md,pdf}
     rendercv_output/AAAAMMDD/<Nome>_LinkedIn_<LANG>_AAAA_MM_DD.md  (se linkedin/linkedin_<LANG>.md existir)
     rendercv_output/latest/<Nome>_<LANG>.{md,pdf}
+    rendercv_output/latest/<Nome>_<LANG>_Resumido.{md,pdf}
     rendercv_output/latest/<Nome>_LinkedIn_<LANG>.md
+
+O LinkedIn não tem versão resumida: é copiado uma vez por idioma.
 """
 
 import argparse
@@ -36,6 +45,12 @@ LANGS = {
     "EN": ROOT / "cv_joao_paulo_en.yaml",
 }
 
+# Versão resumida (2 páginas) de cada idioma. Opcional: sem arquivo, é pulada.
+LANGS_RESUMIDO = {
+    "PT": ROOT / "cv_joao_paulo_resumido.yaml",
+    "EN": ROOT / "cv_joao_paulo_resumido_en.yaml",
+}
+
 
 def rendercv_cmd() -> list[str]:
     if shutil.which("rendercv"):
@@ -48,13 +63,15 @@ def file_stem(yaml_path: Path) -> str:
     return data["cv"]["name"].strip().replace(" ", "_")
 
 
-def render(lang: str, yaml_path: Path, date: dt.date) -> list[Path]:
+def render(lang: str, yaml_path: Path, date: dt.date, variant: str = "") -> list[Path]:
+    """Gera PDF e MD de um YAML. `variant` vira sufixo do nome ("Resumido" -> _PT_Resumido)."""
     stem = file_stem(yaml_path)
     day_dir = OUTPUT / date.strftime("%Y%m%d")
     day_dir.mkdir(parents=True, exist_ok=True)
     LATEST.mkdir(parents=True, exist_ok=True)
 
-    base = day_dir / f"{stem}_CV_{lang}_{date.strftime('%Y_%m_%d')}"
+    tag = f"{lang}_{variant}" if variant else lang
+    base = day_dir / f"{stem}_CV_{tag}_{date.strftime('%Y_%m_%d')}"
     pdf, md = base.with_suffix(".pdf"), base.with_suffix(".md")
 
     # O .typ é intermediário: fica numa pasta temporária, fora do repositório.
@@ -69,10 +86,15 @@ def render(lang: str, yaml_path: Path, date: dt.date) -> list[Path]:
         ]
         subprocess.run(cmd, check=True, cwd=ROOT)
 
-    generated = [pdf, md]
-    shutil.copy2(pdf, LATEST / f"{stem}_{lang}.pdf")
-    shutil.copy2(md, LATEST / f"{stem}_{lang}.md")
+    shutil.copy2(pdf, LATEST / f"{stem}_{tag}.pdf")
+    shutil.copy2(md, LATEST / f"{stem}_{tag}.md")
+    return [pdf, md]
 
+
+def copy_linkedin(lang: str, yaml_path: Path, date: dt.date) -> list[Path]:
+    stem = file_stem(yaml_path)
+    day_dir = OUTPUT / date.strftime("%Y%m%d")
+    generated = []
     linkedin = ROOT / "linkedin" / f"linkedin_{lang}.md"
     if linkedin.exists():
         dated = day_dir / f"{stem}_LinkedIn_{lang}_{date.strftime('%Y_%m_%d')}.md"
@@ -96,7 +118,14 @@ def main() -> int:
             if args.lang:
                 ok = False
             continue
-        for path in render(lang, yaml_path, args.date):
+        generated = render(lang, yaml_path, args.date)
+        resumido = LANGS_RESUMIDO[lang]
+        if resumido.exists():
+            generated += render(lang, resumido, args.date, variant="Resumido")
+        else:
+            print(f"[aviso] {lang}: {resumido.name} não existe, versão resumida ignorada.", file=sys.stderr)
+        generated += copy_linkedin(lang, yaml_path, args.date)
+        for path in generated:
             print(f"[ok] {lang}: {path.relative_to(ROOT)}")
     return 0 if ok else 1
 

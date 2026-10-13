@@ -23,6 +23,6 @@ Criar um agente orientador que coordena quatro agentes (atualizar-cv, avaliar-cv
 - Nomes dos agentes com hífen (`atualizar-cv`), exigência do Claude Code.
 
 ## Pendências
-- Criar `cv_joao_paulo_en.yaml`. O YAML atual só tem PT; a tradução depende de o usuário confirmar como quer apresentar cargos e o nível de inglês.
+- ~~Criar `cv_joao_paulo_en.yaml`.~~ Feito em 2026-10-13 (ver registro da versão em inglês). O YAML atual só tem PT; a tradução depende de o usuário confirmar como quer apresentar cargos e o nível de inglês.
 - Criar `linkedin/linkedin_PT.md` e `linkedin_EN.md` na primeira rodada do atualizar-cv.
-- A certificação AZ-400 aparece com validade até 07/2026; confirmar se foi renovada.
+- ~~A certificação AZ-400 aparece com validade até 07/2026; confirmar se foi renovada.~~ Resolvido em 2026-10-13: renovada até 07/2027.
